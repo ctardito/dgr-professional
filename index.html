@@ -10,55 +10,67 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+
+<div class="cursor-img">
+  <img src="assets/cursor-shaver.png" alt="cursor">
+</div>
+    <div id="hair-container"></div>
+
+
 <body>
 
   <!-- NAVBAR -->
 
   <header class="navbar">
 
-    <div class="logo">
-      DGR
-    </div>
+ <a href="#hero" class="logo" id="logo">
+  <span class="logo-mask">
+    <img src="assets/logo/logo-dgr-01.svg" alt="DGR Professional logo">
+  </span>
+</a>
 
     <nav class="nav">
-      <a href="#spark">Gama Spark</a>
-      <a href="#garantia">Garantía</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#spark" data-key="nav1">Spark Series</a>
+      <a href="#garantia" data-key="nav2">Warranty</a>
+      <a href="#contacto" data-key="nav3">Contact</a>
+
+  <div class="lang-switch">
+    <button id="lang-en">EN</button>
+  <span>|</span>
+  <button id="lang-es">ES</button>
+</div>
+
     </nav>
 
-    <div class="menu-btn">
-      ☰
-    </div>
+    <div class="menu-btn">☰</div>
 
   </header>
 
   <!-- HERO -->
 
-  <section class="hero">
+  <section id="hero" class="hero">
 
     <div class="hero-video">
-
       <video autoplay muted loop playsinline>
-        <source src="assets/video.mp4" type="video/mp4">
+        <source src="assets/video/video-hero.mp4" type="video/mp4">
       </video>
-
       <div class="hero-overlay"></div>
-
     </div>
 
     <div class="hero-content">
 
-      <p class="eyebrow">
-        PROFESSIONAL BARBER TECHNOLOGY
+      <p class="eyebrow" data-key="hero-eyebrow">
+        PROFESSIONAL BARBER ENGINEERING
       </p>
 
-      <h1>
-        Future Barber Tools.
+      <h1 data-key="hero-title">
+        Tools built<br>
+        for mastery.
       </h1>
 
-      <p class="hero-description">
-        Precision engineering for elite barbershops.<br>
-        Tecnología profesional minimalista para la nueva generación.
+      <p class="hero-description" data-key="hero-desc">
+        When you know what you’re doing,<br>
+        you choose tools that match your level.
       </p>
 
     </div>
@@ -71,91 +83,141 @@
 
     <div class="section-heading">
 
-      <p class="section-label">
-        GAMA SPARK
+      <p class="section-label" data-key="spark-label">
+        SPARK SERIES
       </p>
 
-      <h2>
-        Built for precision.
+      <h2 data-key="spark-title">
+        Created by experts.<br>
+        Built for professionals.
       </h2>
 
     </div>
 
     <div class="products-grid">
 
+      <!-- DASH -->
+
       <div class="product-card">
-        <img src="assets/dash.jpg" alt="">
+
+        <img src="assets/dash.jpg" alt="DGR Dash clipper">
+
         <div class="product-info">
+
           <h3>DGR Dash</h3>
-          <p>Ultra precision trimmer</p>
+
+          <p data-key="dash">
+            Power under control.<br>
+            Built to dominate every cut with precision.
+          </p>
+
         </div>
+
       </div>
 
+      <!-- STRIKE -->
+
       <div class="product-card">
-        <img src="assets/strike.jpg" alt="">
+
+        <img src="assets/strike.jpg" alt="DGR Strike trimmer">
+
         <div class="product-info">
+
           <h3>DGR Strike</h3>
-          <p>High performance clipper</p>
+
+          <p data-key="strike">
+            Detail is not a finish.<br>
+            It’s your signature.
+          </p>
+
         </div>
+
       </div>
 
+      <!-- ZERO -->
+
       <div class="product-card">
-        <img src="assets/zero.jpg" alt="">
+
+        <img src="assets/zero.jpg" alt="DGR Zero shaver">
+
         <div class="product-info">
+
           <h3>DGR Zero</h3>
-          <p>Zero-gap finishing tool</p>
+
+          <p data-key="zero">
+            The finish that separates clean from perfect.
+          </p>
+
         </div>
+
       </div>
 
+      <!-- STORM -->
+
       <div class="product-card">
-        <img src="assets/storm.jpg" alt="">
+
+        <img src="assets/storm.jpg" alt="DGR Storm air blower">
+
         <div class="product-info">
+
           <h3>DGR Storm</h3>
-          <p>Power engineered motor</p>
+
+          <p data-key="storm">
+            High-speed airflow engineered for full workstation control.
+          </p>
+
         </div>
+
       </div>
 
     </div>
 
   </section>
 
-  <!-- GARANTIA -->
+  <!-- WARRANTY -->
 
   <section id="garantia" class="garantia reveal">
 
     <div class="section-heading">
-      <p class="section-label">SUPPORT</p>
-      <h2>Garantía</h2>
+
+      <p class="section-label" data-key="support-label">
+        SUPPORT
+      </p>
+
+      <h2 data-key="warranty-title">
+        Warranty
+      </h2>
+
     </div>
 
     <div class="text-block">
 
-      <p>
-        Aquí encontrarás las condiciones generales de garantía para productos DGR Professional.
+      <p data-key="warranty-intro">
+        Here you will find the general warranty conditions for DGR Professional products.
       </p>
 
-      <h3>¿Cuál es mi garantía?</h3>
+      <h3 data-key="w1">What is my warranty?</h3>
 
-      <p>
-        En productos adquiridos a través de distribuidores oficiales, es totalmente indispensable presentar una copia del comprobante de la compra para poder disfrutar de tu garantía.
+      <p data-key="w2">
+        For products purchased through official distributors, proof of purchase is required to access warranty coverage.
       </p>
 
-      <h3>¿Cuánto tiempo tengo de garantía?</h3>
+      <h3 data-key="w3">How long is the warranty?</h3>
 
-      <p>
-        Todos nuestros productos se fabrican según los más altos estándares de calidad y se someten a rigurosas revisiones antes de ser lanzados al mercado.
+      <p data-key="w4">
+        All products are manufactured under the highest quality standards and tested before release.
       </p>
 
-      <p>
-        Para salones de belleza y uso profesional: 2 años a partir de la fecha de la factura para todos los aparatos eléctricos.
+      <p data-key="w5">
+        Professional use: 2 years from invoice date for all electrical devices.
       </p>
 
-      <h3>¿Hay excepciones?</h3>
+      <h3 data-key="w6">Are there any exceptions?</h3>
 
       <ul>
-        <li>Daños accidentales no incluidos.</li>
-        <li>Manipulación por terceros invalida la garantía.</li>
-        <li>No cubre productos de distribuidores no autorizados.</li>
+        <li data-key="w7">Accidental damage is not covered.</li>
+        <li data-key="w8">Tampering by third parties voids the warranty.</li>
+        <li data-key="w9">Unauthorized distributors are not covered.</li>
       </ul>
 
     </div>
@@ -167,15 +229,23 @@
   <section id="contacto" class="contact reveal">
 
     <div class="section-heading">
-      <p class="section-label">CONTACT</p>
-      <h2>Let's talk.</h2>
+
+      <p class="section-label" data-key="contact-label">
+        CONTACT
+      </p>
+
+      <h2 data-key="contact-title">
+        Built for barbers<br>
+        who demand control.
+      </h2>
+
     </div>
 
     <div class="contact-grid">
 
       <div>
 
-        <p class="contact-title">
+        <p class="contact-title" data-key="email">
           Email
         </p>
 
@@ -183,11 +253,9 @@
           info@dgrprofessional.com
         </p>
 
-        <br>
-
-        <p class="contact-text">
+        <p class="contact-text" data-key="address">
           Av. Bon Pastor 33-45<br>
-          08930 Sant Adrià del Besós<br>
+          08930 Sant Adrià del Besòs<br>
           Barcelona · Spain
         </p>
 
@@ -195,11 +263,11 @@
 
       <div>
 
-        <p class="contact-title">
+        <p class="contact-title" data-key="support">
           Customer service
         </p>
 
-        <p class="contact-text">
+        <p class="contact-text" data-key="schedule">
           Monday to Friday<br>
           9:00 a.m. — 6:00 p.m.
         </p>
@@ -220,36 +288,29 @@
 
         <h3>DGR Professional</h3>
 
-        <p>
-          Distribución & Beauty Pro
+        <p data-key="footer-desc">
+          Precision barber engineering.
         </p>
 
       </div>
 
       <div class="footer-links">
-
         <a href="#">Instagram</a>
         <a href="#">LinkedIn</a>
         <a href="#">YouTube</a>
-
       </div>
 
     </div>
 
-    <div class="footer-bottom">
-      DGR Professional © 2026. Todos los derechos reservados.
+    <div class="footer-bottom" data-key="footer-rights">
+      DGR Professional © 2026. All rights reserved.
     </div>
 
   </footer>
 
-  <!-- FLOAT BUTTON -->
-
-  <button id="topBtn">
-    ↑
-  </button>
+  <button id="topBtn">▲</button>
 
   <script src="script.js"></script>
 
 </body>
-
 </html>
