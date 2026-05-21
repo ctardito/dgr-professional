@@ -101,7 +101,7 @@ html, body {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding: 20px 6vw;
+  padding: 0px 6vw;
   z-index:1000;
   backdrop-filter:blur(10px);
   background:
@@ -208,16 +208,9 @@ html, body {
   font-size: 12px;
 }
 
-
-/* HERO */
 /* =========================
-   HERO APPLE PRO PIN
+   HERO PRO 
 ========================= */
-
-.hero-pin {
-  height: 200vh;
-  position: relative;
-}
 
 .hero-stage {
   position: sticky;
@@ -289,6 +282,8 @@ html, body {
 section{
   padding:
   140px 6vw;
+  border-top:
+  1px solid rgba(0,0,0,.08);
 }
 
 .section-heading{
@@ -374,7 +369,7 @@ section{
 /* CONTACT */
 .contact-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr;
   gap:80px;
   align-items: stretch;
 }
@@ -400,7 +395,6 @@ section{
 
 .map-container{
   width:100%;
-  min-height:420px;
   border-radius:32px;
   overflow:hidden;
   box-shadow:
@@ -541,6 +535,11 @@ section{
     display:block;
   }
 
+
+.especial-section {
+  border-top: none;
+}
+
   .products-grid{
     grid-template-columns:1fr;
   }
@@ -571,6 +570,7 @@ section{
     justify-content: center;
     padding-top: 90vh;
     padding-left: 0vw;
+    padding-bottom: 5vh;
 }
 
 /* TYPO */

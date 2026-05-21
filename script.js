@@ -20,7 +20,7 @@ window.addEventListener("scroll", () => {
 
   const scale = 1 - progress * 0.2;
   const radius = progress * 40;
-  const blur = progress * 8;
+  const blur = progress * 6;
   const y = progress * 80;
 
   video.style.transform =
