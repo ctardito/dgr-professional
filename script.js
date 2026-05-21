@@ -1,3 +1,41 @@
+const hero = document.querySelector(".hero-pin");
+const stage = document.querySelector(".hero-stage");
+const video = document.querySelector(".hero-video");
+const content = document.querySelector(".hero-content");
+
+function clamp(v, min, max) {
+  return Math.min(Math.max(v, min), max);
+}
+
+window.addEventListener("scroll", () => {
+  const rect = hero.getBoundingClientRect();
+
+  // progreso real dentro del pinned section
+  let progress = -rect.top / (hero.offsetHeight - window.innerHeight);
+
+  progress = clamp(progress, 0, 1);
+
+  // easing 
+  progress = 1 - Math.pow(1 - progress, 3);
+
+  // TRANSFORMACIONES
+  const scale = 1 - progress * 0.3;
+  const radius = progress * 40;
+  const blur = progress * 8;
+  const y = progress * 80;
+
+  video.style.transform =
+    `translate(-50%, -50%) scale(${scale}) translateY(${y}px)`;
+
+  video.style.borderRadius = radius + "px";
+  video.style.filter = `blur(${blur}px)`;
+
+  // CONTENT REVEAL
+  content.style.opacity = progress;
+  content.style.transform = `translateY(${40 - progress * 40}px)`;
+});
+
+
 /* =========================
    REVEAL ANIMATION
 ========================= */
@@ -69,8 +107,8 @@ const translations = {
     "w7": "Quedan excluidos de este protocolo los fallos derivados de impactos directos o agentes externos accidentales.",
     "w8": "Cualquier apertura del chasis o alteración de la arquitectura interna invalida de forma inmediata la certificación.",
     "w9": "Los puntos de venta no autorizados quedan estrictamente revocados de todo derecho de asistencia técnica.",
-    "contact-label": "SEDE CENTRAL",
-    "contact-title": "Diseñado para profesionales<br>que no negocian el control.",
+    "contact-label": "CONTACTO",
+    "contact-title": "Estudio técnico de ingeniería,<br>calibración y reparación especializada.",
     "email": "Canal Corporativo",
     "support": "División de Asistencia Especializada",
     "schedule": "Lunes a viernes<br>9:00 a.m. — 18:00 p.m.",
@@ -102,8 +140,8 @@ const translations = {
     "w7": "Damage resulting from direct impact or accidental external factors is strictly excluded.",
     "w8": "Any breach of the chassis or alteration of the internal architecture voids certification immediately.",
     "w9": "Non-authorized points of sale are entirely barred from accessing technical assistance.",
-    "contact-label": "HEADQUARTERS",
-    "contact-title": "Engineered for professionals<br>who refuse to compromise on control.",
+    "contact-label": "CONTACT",
+    "contact-title": "Technical studio for engineering,<br>calibration and specialized repair.",
     "email": "Corporate Channel",
     "support": "Specialized Assistance Division",
     "schedule": "Monday to Friday<br>9:00 a.m. — 18:00 p.m.",

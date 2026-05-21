@@ -210,68 +210,85 @@ html, body {
 
 
 /* HERO */
-.hero{
-  min-height: 100vh;
-  align-items: center;
-  padding: 140px 6vw 120px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
+/* =========================
+   HERO APPLE PRO PIN
+========================= */
 
-
-.hero-video{
+.hero-pin {
+  height: 200vh;
   position: relative;
-  width: 70vw;
-  height: 70vh;   
-  overflow: hidden;
-  border-radius: 40px;
-  box-shadow: 0 40px 120px rgba(0,0,0,.12);
 }
 
-.hero-video video{
+.hero-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* VIDEO CENTER PIECE */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: center;
+
+  border-radius: 0;
+  overflow: hidden;
+
+  will-change: transform, border-radius, filter;
+}
+
+/* VIDEO */
+.hero-video video {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  display: block;
-  opacity: .8;
+  object-fit: cover;
 }
 
-.hero-overlay{
-  position:absolute;
-  inset:0;
-  background:
-  linear-gradient(
-  to top,
-  rgba(0,0,0,.90),
-  transparent
-  );
+/* OVERLAY */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.7), transparent);
 }
 
-.hero-content{
-  margin-top:70px;
-  width: 70vw;
+/* CONTENT */
+.hero-content {
+  position: absolute;
+  bottom: 10vh;
+  left: 6vw;
+  max-width: 700px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  color: #111;
 }
 
-.eyebrow{
-  font-size:12px;
-  letter-spacing:2px;
-  color:#777;
-  margin-bottom:18px;
+/* TYPO */
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 18px;
 }
 
-.hero h1{
-  font-size: clamp(42px,6vw,90px);
-  line-height:.9;
-  letter-spacing:-2px;
-  margin-bottom:28px;
+.hero-content h1 {
+  font-size: clamp(42px, 6vw, 90px);
+  line-height: .9;
+  letter-spacing: -2px;
+  margin-bottom: 28px;
 }
 
-.hero-description{
-  color:#555;
-  font-size:20px;
-  line-height:1.7;
-  max-width:720px;
+.hero-description {
+  color: #555;
+  font-size: 20px;
+  line-height: 1.7;
+  max-width: 720px;
 }
 
 
@@ -460,6 +477,7 @@ section{
   border-top:
   1px solid rgba(0,0,0,.08);
   color:#888;
+  font-size:12px;
 }
 
 /* FLOAT BUTTON */
