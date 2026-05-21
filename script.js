@@ -20,18 +20,25 @@ window.addEventListener("scroll", () => {
 
   const isMobile = window.innerWidth < 900;
 
+  // SCALE
   const scale = 1 - progress * 0.1;
+
+  // BORDER RADIUS
   const radius = progress * 40;
 
-  // 👉 BLUR SOLO EN DESKTOP
-  const blur = isMobile ? 0 : progress * 4;
+  // BLUR SUAVE EN MOBILE + NORMAL EN DESKTOP
+  const blur = isMobile
+    ? progress * 2   // MUY SUAVE (mobile)
+    : progress * 4;    // desktop más cinematográfico
 
+  // MOVE
   const y = progress * 80;
 
   video.style.transform =
     `translate(-50%, -50%) scale(${scale}) translateY(${y}px)`;
 
   video.style.borderRadius = radius + "px";
+
   video.style.filter = `blur(${blur}px)`;
 
   content.style.opacity = progress;
@@ -53,7 +60,6 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach(el => observer.observe(el));
 
-
 /* =========================
    TOP BUTTON
 ========================= */
@@ -69,7 +75,6 @@ if (topBtn) {
   });
 }
 
-
 /* =========================
    TRANSLATIONS DATA
 ========================= */
@@ -77,7 +82,8 @@ const translations = {
   es: {
     nav1: "Serie Spark",
     nav2: " FAQs",
-    nav3: "Contacto",
+    nav3: "Eventos & Colaboradores",
+    nav4: "Contacto",
 
     "hero-eyebrow": "ALTA INGENIERÍA APLICADA AL ARTE DEL CORTE",
     "hero-title": "Instrumentos de culto<br>para el dominio absoluto.",
@@ -98,22 +104,53 @@ const translations = {
     "warranty-title": "FAQs & Garantía",
     "warranty-intro": "Certificación y condiciones de cobertura estructural para los sistemas DGR Professional ®.",
 
-    w1: "¿Qué parámetros abarca el protocolo?",
-    w2: "Dispositivos adquiridos exclusivamente a través de la red de distribución autorizada y validados mediante acreditación de compra oficial.",
-    w3: "Vigencia del ciclo de cobertura",
-    w4: "Sistemas calibrados bajo estándares de grado industrial y auditados mediante control de calidad individualizado.",
-    w5: "Uso profesional de alta intensidad: 24 meses de cobertura integral a partir de la fecha de facturación.",
-    w7: "Quedan excluidos de este protocolo los fallos derivados de impactos directos o agentes externos accidentales.",
-    w8: "Cualquier apertura del chasis o alteración de la arquitectura interna invalida de forma inmediata la certificación.",
-    w9: "Los puntos de venta no autorizados quedan estrictamente revocados de todo derecho de asistencia técnica.",
+    w1: "¿Cuál es mi garantía?",
+
+    w2: "En productos adquiridos a través de distribuidores oficiales, es imprescindible presentar una copia del comprobante de compra para poder hacer válida la garantía. Sin comprobante, el servicio se considerará fuera de garantía, independientemente de la fecha de compra.",
+
+    w3: "¿Cuánto tiempo tengo de garantía?",
+
+    w4: "Todos nuestros productos se fabrican bajo los más altos estándares de calidad y pasan rigurosos controles antes de su comercialización.",
+
+    w5: "Para salones de belleza y uso profesional: 2 años de garantía desde la fecha de la factura para todos los dispositivos eléctricos.",
+
+    w7: "No están cubiertos los daños accidentales, especialmente aquellos en placas, arañazos o desconchados.",
+
+    w8: "La manipulación del producto por terceros durante el periodo de garantía invalida automáticamente la cobertura.",
+
+    w9: "No se ofrece garantía en productos adquiridos a través de distribuidores no autorizados, ya que podrían no ser originales. En estos casos, los derechos corresponden al punto de venta.",
+
+    w10: "Para cualquier gestión, ten preparado el comprobante de compra y los datos del producto. Puedes continuar en soporte o escribirnos a info@dgrprofessional.com",
+
+
+
+    "collab-label": "COLABORADORES & EVENTOS",
+
+    "collab-title": "Presencia en escenarios,<br>educación y cultura profesional.",
+
 
     "contact-label": "CONTACTO",
-    "contact-title": "Estudio técnico <br>de ingeniería, ventas,<br>calibración y reparación especializada.",
+    "contact-title": "Estudio técnico de ingeniería,<br>distribución y soporte especializado.",
 
-    email: "Canal Corporativo",
-    support: "División de Asistencia Especializada",
-    schedule: "Lunes a viernes<br>9:00 — 18:00",
-    address: "Av. Bon Pastor 33–45<br>08930 Sant Adrià de Besòs<br>Barcelona · España",
+    "channel-title": "Canal Corporativo",
+
+    "address-title": "Sede Central",
+
+    "distributor-title": "Distribuidor Oficial Sublime Beauty",
+
+    "coverage-title": "Cobertura",
+    "coverage": "Toda España",
+
+    "phone-title": "Teléfono",
+
+    "online-title": "Canales Digitales",
+
+    "support-schedule-title": "Horario Atención",
+    "support-schedule": "Lunes a Viernes<br>09:00 am–18:00 pm",
+
+    "store-schedule-title": "Horario Tienda",
+    "store-schedule": "Lunes a Viernes<br>8:30 am · 18:30 pm<br>Sábado 9:00 am · 14:00 pm",
+
 
     "footer-desc": "Alta ingeniería de precisión para el cuidado masculino de vanguardia.",
     "footer-rights": "DGR Professional © 2026. Todos los derechos reservados.",
@@ -126,7 +163,9 @@ const translations = {
   en: {
     nav1: "Spark Series",
     nav2: " FAQs",
-    nav3: "Contact",
+    nav3: "Events & Collabs",
+    nav4: "Contact",
+
 
     "hero-eyebrow": "HIGH-PRECISION ENGINEERING FOR MASTER CRAFTSMANSHIP",
     "hero-title": "Instruments of cult<br>for absolute mastery.",
@@ -147,22 +186,52 @@ const translations = {
     "warranty-title": "FAQs & Warranty",
     "warranty-intro": "Certification and structural coverage terms for DGR Professional ® systems.",
 
-    w1: "What parameters are covered under this protocol?",
-    w2: "Devices acquired exclusively through the authorized distribution network and verified by official proof of purchase.",
-    w3: "Validity period",
-    w4: "Systems calibrated under industrial-grade guidelines and individually audited through rigorous quality control.",
-    w5: "High-intensity professional deployment: 24 months of comprehensive coverage from the invoice date.",
-    w7: "Damage resulting from direct impact or accidental external factors is strictly excluded.",
-    w8: "Any breach of the chassis or alteration of the internal architecture voids certification immediately.",
-    w9: "Non-authorized points of sale are entirely barred from accessing technical assistance.",
+    w1: "What is my warranty?",
+
+    w2: "For products purchased through official distributors, a copy of the proof of purchase is strictly required to validate the warranty. Without proof of purchase, the service will be considered out of warranty regardless of purchase date.",
+
+    w3: "How long is my warranty?",
+
+    w4: "All products are manufactured under the highest quality standards and undergo strict testing before being released to the market.",
+
+    w5: "For salons and professional use: 2 years of warranty from the invoice date for all electrical devices.",
+
+    w7: "Accidental damage is not covered, especially damage to plates, scratches or chipping.",
+
+    w8: "Any third-party tampering with the product during the warranty period will automatically void coverage.",
+
+    w9: "No warranty applies to products purchased through unauthorized distributors, as they may not be genuine. In such cases, consumer rights apply to the point of sale.",
+
+    w10: "For any request, please have your proof of purchase and product details ready. You may proceed to support or contact us directly at info@dgrprofessional.com",
+
+
+    "collab-label": "COLLABORATORS & EVENTS",
+
+    "collab-title": "Presence across stages,<br>education and professional culture.",
+
 
     "contact-label": "CONTACT",
-    "contact-title": "Technical studio <br>for engineering, sales,<br>calibration and specialized repair.",
+    "contact-title": "Technical engineering studio<br>for distribution and specialized support.",
 
-    email: "Corporate Channel",
-    support: "Specialized Assistance Division",
-    schedule: "Monday to Friday<br>9:00 — 18:00",
-    address: "Av. Bon Pastor 33–45<br>08930 Sant Adrià de Besòs<br>Barcelona · Spain",
+    "channel-title": "Corporate Channel",
+
+    "address-title": "Technical Headquarters",
+
+    "distributor-title": "Official Distributor Sublime Beauty",
+
+    "coverage-title": "Coverage",
+    "coverage": "All Spain",
+
+    "phone-title": "Phone",
+
+    "online-title": "Digital Channels",
+
+    "support-schedule-title": "Customer Support Hours",
+    "support-schedule": "Monday to Friday<br>09:00 am–18:00 pm",
+
+    "store-schedule-title": "Store Hours",
+    "store-schedule": "Monday to Friday<br>8:30 am · 18:30 pm<br>Saturday<br>9:00 am · 14:00 pm",
+
 
     "footer-desc": "High-precision grooming engineering for vanguard aesthetics.",
     "footer-rights": "DGR Professional © 2026. All rights reserved.",
@@ -186,7 +255,6 @@ function setActiveLang(lang) {
   enBtn.classList.toggle("active", lang === "en");
 }
 
-
 /* =========================
    LANGUAGE SWITCH
 ========================= */
@@ -207,7 +275,6 @@ function setLanguage(lang) {
   localStorage.setItem("lang", lang);
 }
 
-
 /* =========================
    INIT LANG SYSTEM (SAFE)
 ========================= */
@@ -227,7 +294,6 @@ function initLanguageSystem() {
     btnEn.addEventListener("click", () => setLanguage("en"));
   }
 }
-
 
 /* =========================
    DOM READY INIT (IMPORTANT)
@@ -260,7 +326,6 @@ function setActiveNav() {
 }
 
 window.addEventListener("scroll", setActiveNav);
-
 
 /* =========================
    NAV CLICK
@@ -310,7 +375,6 @@ if (menuBtn && nav) {
 setLanguage(localStorage.getItem("lang") || "en");
 setActiveNav();
 
-
 /* =========================
    LOGO ANIMATION
 ========================= */
@@ -325,7 +389,6 @@ if (logo) {
   window.addEventListener("load", animateLogo);
   logo.addEventListener("click", animateLogo);
 }
-
 
 /* =========================
    CURSOR FOLLOW
@@ -354,7 +417,6 @@ if (cursorImg) {
   animateCursor();
 }
 
-
 /* =========================
    HAIR PARTICLES
 ========================= */
@@ -380,4 +442,32 @@ if (hairContainer) {
 
     setTimeout(() => hair.remove(), 900);
   }
+}
+
+/* =========================
+   COLLABS CAROUSEL
+========================= */
+
+const collabCarousel = document.getElementById("collabCarousel");
+
+const prevBtn = document.querySelector(".carousel-btn.prev");
+const nextBtn = document.querySelector(".carousel-btn.next");
+
+if (collabCarousel && prevBtn && nextBtn) {
+
+  const scrollAmount = 460;
+
+  nextBtn.addEventListener("click", () => {
+    collabCarousel.scrollBy({
+      left: scrollAmount,
+      behavior: "smooth"
+    });
+  });
+
+  prevBtn.addEventListener("click", () => {
+    collabCarousel.scrollBy({
+      left: -scrollAmount,
+      behavior: "smooth"
+    });
+  });
 }

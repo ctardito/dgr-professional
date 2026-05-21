@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <div class="cursor-img">
@@ -24,7 +26,8 @@
     <nav class="nav">
       <a href="#spark" data-key="nav1">Serie Spark</a>
       <a href="#warranty" data-key="nav2">Garantía</a>
-      <a href="#contact" data-key="nav3">Contacto</a>
+      <a href="#collab" data-key="nav3">Eventos & Colaboradores</a>
+      <a href="#contact" data-key="nav4">Contacto</a>
 
       <div class="lang-switch">
         <button id="lang-en">EN</button>
@@ -36,29 +39,27 @@
     <div class="menu-btn">☰</div>
   </header>
 
-<section id="hero" class="hero-pin">
-  <div class="hero-stage">
+  <section id="hero" class="hero-pin">
+    <div class="hero-stage">
 
-    <div class="hero-video">
-      <video autoplay muted loop playsinline>
-        <source src="assets/video/video-hero.mp4" type="video/mp4">
-      </video>
-      <div class="hero-overlay"></div>
-    </div>
+      <div class="hero-video">
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/video-hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
 
       <div class="hero-content">
-      <p class="eyebrow" data-key="hero-eyebrow"></p>
+        <p class="eyebrow" data-key="hero-eyebrow"></p>
 
-      <h1 data-key="hero-title"></h1>
+        <h1 data-key="hero-title"></h1>
 
-      <p class="hero-description" data-key="hero-desc"></p>
+        <p class="hero-description" data-key="hero-desc"></p>
+      </div>
+
     </div>
 
-  </div>
-
-
-    
-</section>
+  </section>
 
 
   <section id="spark" class="products reveal especial-section">
@@ -66,8 +67,6 @@
       <p class="section-label" data-key="spark-label">SERIE SPARK</p>
       <h2 data-key="spark-title">Concebida por expertos.<br>Desarrollada para los arquitectos de la línea.</h2>
     </div>
-
-
 
     <div class="products-grid">
       <div class="product-card">
@@ -106,85 +105,262 @@
   </section>
 
   <section id="warranty" class="garantia reveal">
+
     <div class="section-heading">
       <p class="section-label" data-key="support-label">SOPORTE TÉCNICO</p>
       <h2 data-key="warranty-title">Garantía de Ingeniería</h2>
     </div>
 
-    <div class="text-block">
-      <p data-key="warranty-intro">Certificación y condiciones de cobertura estructural para los sistemas DGR Professional ®.</p>
-      <h3 data-key="w1">¿Qué parámetros abarca el protocolo?</h3>
-      <p data-key="w2">Dispositivos adquiridos exclusivamente a través de la red de distribución autorizada...</p>
-      <h3 data-key="w3">Vigencia del ciclo de cobertura</h3>
-      <p data-key="w4">Sistemas calibrados bajo estándares de grado industrial y auditados...</p>
-      <p data-key="w5">Uso profesional de alta intensidad: 24 meses de cobertura integral...</p>
-
-      <ul>
-        <li data-key="w7">Quedan excluidos de este protocolo los fallos derivados de impactos directos...</li>
-        <li data-key="w8">Cualquier apertura del chasis o alteración de la arquitectura interna...</li>
-        <li data-key="w9">Los puntos de venta no autorizados quedan estrictamente revocados...</li>
-      </ul>
+    <!-- INTRO FUERA DE LAS COLUMNAS -->
+    <div class="warranty-intro">
+      <p data-key="warranty-intro">
+        Certificación y condiciones de cobertura estructural para los sistemas DGR Professional ®.
+      </p>
     </div>
+
+    <!-- GRID 3 COLUMNAS -->
+    <div class="warranty-grid">
+
+      <!-- Columna 1 -->
+      <div class="warranty-col">
+        <h3 data-key="w1">¿Qué parámetros abarca el protocolo?</h3>
+        <p data-key="w2">
+          Dispositivos adquiridos exclusivamente a través de la red de distribución autorizada...
+        </p>
+      </div>
+
+      <!-- Columna 2 -->
+      <div class="warranty-col">
+        <h3 data-key="w3">Vigencia del ciclo de cobertura</h3>
+        <p data-key="w4">
+          Sistemas calibrados bajo estándares de grado industrial y auditados...
+        </p>
+
+        <p data-key="w5">
+          Uso profesional de alta intensidad: 24 meses de cobertura integral...
+        </p>
+      </div>
+
+      <!-- Columna 3 -->
+      <div class="warranty-col">
+        <ul>
+          <li data-key="w7">
+            Quedan excluidos de este protocolo los fallos derivados de impactos directos...
+          </li>
+
+          <li data-key="w8">
+            Cualquier apertura del chasis o alteración de la arquitectura interna...
+          </li>
+
+          <li data-key="w9">
+            Los puntos de venta no autorizados quedan estrictamente revocados...
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--FUERA DEL GRID -->
+
+    <div class="warranty-footer-note">
+      <p data-key="w10">
+        Para cualquier gestión, ten preparado el comprobante de compra y los datos del producto. Puedes continuar en
+        Soporte o escribirnos desde Contacto.
+      </p>
+    </div>
+
   </section>
 
-<section id="contact" class="contact reveal">
-  <div class="section-heading">
-    <p class="section-label" data-key="contact-label">CENTRAL TÉCNICA</p>
-    <h2 data-key="contact-title">
-      Diseñado para profesionales<br>que no negocian el control.
-    </h2>
-  </div>
 
-  <div class="contact-grid">
+  <!-- =========================
+     COLABORADORES & EVENTOS
+========================= -->
 
-    <!-- Información -->
-    <div class="contact-info">
-      <div>
-        <p class="contact-title" data-key="email">Canal Corporativo</p>
-        <p class="contact-text">info@dgrprofessional.com</p>
+  <section id="collab" class="collabs reveal">
 
-        <p class="contact-text" data-key="address">
-          Av. Bon Pastor 33–45<br>
-          08930 Sant Adrià de Besòs<br>
-          Barcelona · España
-        </p>
+    <div class="section-heading">
+      <p class="section-label" data-key="collab-label">
+        COLABORADORES & EVENTOS
+      </p>
+
+      <h2 data-key="collab-title">
+        Presencia en escenarios,<br>
+        educación y cultura profesional.
+      </h2>
+    </div>
+
+    <div class="collab-carousel-wrapper">
+
+      <button class="carousel-btn prev" aria-label="Previous">
+        ←
+      </button>
+
+      <div class="collab-carousel" id="collabCarousel">
+
+        <!-- VIDEO -->
+        <article class="collab-card video-card">
+          <video autoplay muted loop playsinline>
+            <source src="assets/video/event-01.mp4" type="video/mp4">
+          </video>
+
+          <div class="collab-overlay">
+            <span class="collab-tag">EVENT</span>
+            <h3>Barcelona Barber Expo</h3>
+          </div>
+        </article>
+
+        <!-- FOTO -->
+        <article class="collab-card">
+          <img src="assets/img/events/event-01.webp" alt="DGR Event">
+
+          <div class="collab-overlay">
+            <span class="collab-tag">COLLAB</span>
+            <h3>Professional Education</h3>
+          </div>
+        </article>
+
+        <!-- VIDEO -->
+        <article class="collab-card video-card">
+          <video autoplay muted loop playsinline>
+            <source src="assets/video/event-02.mp4" type="video/mp4">
+          </video>
+
+          <div class="collab-overlay">
+            <span class="collab-tag">SHOWCASE</span>
+            <h3>DGR Live Session</h3>
+          </div>
+        </article>
+
+        <!-- FOTO -->
+        <article class="collab-card">
+          <img src="assets/img/events/event-02.webp" alt="DGR Collaboration">
+
+          <div class="collab-overlay">
+            <span class="collab-tag">ARTIST</span>
+            <h3>Creative Partnership</h3>
+          </div>
+        </article>
+
+        <!-- VIDEO -->
+        <article class="collab-card video-card">
+          <video autoplay muted loop playsinline>
+            <source src="assets/video/event-03.mp4" type="video/mp4">
+          </video>
+
+          <div class="collab-overlay">
+            <span class="collab-tag">EVENT</span>
+            <h3>Stage Performance</h3>
+          </div>
+        </article>
+
+      </div>
+
+      <button class="carousel-btn next" aria-label="Next">
+        →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact" class="contact reveal">
+
+    <div class="section-heading">
+      <p class="section-label" data-key="contact-label">CONTACTO</p>
+
+      <h2 data-key="contact-title">
+        Estudio técnico de ingeniería,<br>
+        distribución y soporte especializado.
+      </h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- DGR -->
+      <div class="contact-info">
+
+        <div class="contact-block">
+          <p class="contact-title" data-key="channel-title">
+            Canal Corporativo
+          </p>
+
+          <p class="contact-text">
+            info@dgrprofessional.com
+          </p>
+        </div>
+
+        <div class="contact-block">
+          <p class="contact-title" data-key="address-title">
+            Sede Central
+          </p>
+
+          <p class="contact-text" data-key="address">
+            Av. Bon Pastor 33–45<br>
+            08930 Sant Adrià de Besòs<br>
+            Barcelona · España
+          </p>
+        </div>
+
+        <div class="contact-block">
+          <p class="contact-title" data-key="support-schedule-title">
+            Horario Atención
+          </p>
+
+          <p class="contact-text" data-key="support-schedule">
+            Lunes a Viernes<br>
+            9:00 am–13:00 pm </p>
+        </div>
+
+      </div>
+
+      <!-- DISTRIBUIDOR -->
+      <div class="contact-info">
+
+        <div class="contact-block">
+          <p class="contact-title" data-key="distributor-title">
+            Distribuidor Oficial Sublime Beauty
+          </p>
+          <p class="contact-text">
+            +34 933 812 391 | +34 672 620 250
+          </p>
+        </div>
+
+        <div class="contact-block">
+          <p class="contact-title" data-key="online-title">
+            Online
+          </p>
+
+          <p class="contact-text">
+            www.sublimebw.com · info@sublimebw.com
+          </p>
+        </div>
+
+        <div class="contact-block">
+          <p class="contact-title" data-key="store-schedule-title">
+            Horario Tienda
+          </p>
+
+          <p class="contact-text" data-key="store-schedule">
+            Lunes a Viernes 8:30 am · 18:30 pm<br>
+            Sábado 9:00 am–14:00 pm
+          </p>
+        </div>
+
+      </div>
+
+      <!-- MAP -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=Av.+Bon+Pastor+33-45,+08930+Sant+Adrià+de+Besòs,+Barcelona&output=embed"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
 
     </div>
 
-    <!-- Información -->
-    <div class="contact-info">
-  
-
-      <div class="contact-block">
-        <p class="contact-title" data-key="support">
-          División de Asistencia Especializada
-        </p>
-
-        <p class="contact-text" data-key="schedule">
-          Lunes a viernes<br>
-          9:00 — 18:00
-        </p>
-      </div>
-    </div>
-
-
-
-    <!-- Google Map -->
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps?q=Av.+Bon+Pastor+33-45,+08930+Sant+Adrià+de+Besòs,+Barcelona&output=embed"
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <footer class="footer">
     <div class="footer-top">
@@ -193,7 +369,7 @@
         <p data-key="footer-desc">Alta ingeniería de precisión para el cuidado masculino de vanguardia.</p>
       </div>
       <div class="footer-links">
-        <a href="#">Instagram</a>
+        <a href="https://www.instagram.com/sagaproes" target="_blank" rel="noopener noreferrer">Instagram @sagaproes</a>
       </div>
     </div>
 
@@ -206,4 +382,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
