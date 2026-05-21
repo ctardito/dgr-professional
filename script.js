@@ -16,11 +16,16 @@ window.addEventListener("scroll", () => {
 
   let progress = -rect.top / (hero.offsetHeight - window.innerHeight);
   progress = clamp(progress, 0, 1);
-  progress = 1 - Math.pow(1 - progress, 3);
+  progress = 1 - Math.pow(1 - progress, 6);
 
-  const scale = 1 - progress * 0.2;
+  const isMobile = window.innerWidth < 900;
+
+  const scale = 1 - progress * 0.1;
   const radius = progress * 40;
-  const blur = progress * 6;
+
+  // 👉 BLUR SOLO EN DESKTOP
+  const blur = isMobile ? 0 : progress * 4;
+
   const y = progress * 80;
 
   video.style.transform =
@@ -32,7 +37,6 @@ window.addEventListener("scroll", () => {
   content.style.opacity = progress;
   content.style.transform = `translateY(${40 - progress * 40}px)`;
 });
-
 
 /* =========================
    REVEAL ANIMATION
@@ -72,7 +76,7 @@ if (topBtn) {
 const translations = {
   es: {
     nav1: "Serie Spark",
-    nav2: "Garantía",
+    nav2: " FAQs",
     nav3: "Contacto",
 
     "hero-eyebrow": "ALTA INGENIERÍA APLICADA AL ARTE DEL CORTE",
@@ -91,8 +95,8 @@ const translations = {
     storm: "Storm Blower & Vacuum. Dinámica de fluidos avanzada a 160.000 RPM y una fuerza de descompresión de 12.000 Pa. Preservación y pureza ambiental para entornos de trabajo de alta gama.",
 
     "support-label": "SOPORTE TÉCNICO",
-    "warranty-title": "Garantía de Ingeniería",
-    "warranty-intro": "Certificación y condiciones de cobertura estructural para los sistemas DGR Professional.",
+    "warranty-title": "FAQs & Garantía",
+    "warranty-intro": "Certificación y condiciones de cobertura estructural para los sistemas DGR Professional ®.",
 
     w1: "¿Qué parámetros abarca el protocolo?",
     w2: "Dispositivos adquiridos exclusivamente a través de la red de distribución autorizada y validados mediante acreditación de compra oficial.",
@@ -104,7 +108,7 @@ const translations = {
     w9: "Los puntos de venta no autorizados quedan estrictamente revocados de todo derecho de asistencia técnica.",
 
     "contact-label": "CONTACTO",
-    "contact-title": "Estudio técnico de ingeniería,<br>calibración y reparación especializada.",
+    "contact-title": "Estudio técnico <br>de ingeniería, ventas,<br>calibración y reparación especializada.",
 
     email: "Canal Corporativo",
     support: "División de Asistencia Especializada",
@@ -121,7 +125,7 @@ const translations = {
 
   en: {
     nav1: "Spark Series",
-    nav2: "Warranty",
+    nav2: " FAQs",
     nav3: "Contact",
 
     "hero-eyebrow": "HIGH-PRECISION ENGINEERING FOR MASTER CRAFTSMANSHIP",
@@ -140,8 +144,8 @@ const translations = {
     storm: "Storm Blower & Vacuum. Advanced fluid dynamics at 160,000 RPM with a 12,000 Pa decompression force. Atmospheric preservation and purity for elite workstation aesthetics.",
 
     "support-label": "TECHNICAL SUPPORT",
-    "warranty-title": "Engineering Warranty",
-    "warranty-intro": "Certification and structural coverage terms for DGR Professional systems.",
+    "warranty-title": "FAQs & Warranty",
+    "warranty-intro": "Certification and structural coverage terms for DGR Professional ® systems.",
 
     w1: "What parameters are covered under this protocol?",
     w2: "Devices acquired exclusively through the authorized distribution network and verified by official proof of purchase.",
@@ -153,7 +157,7 @@ const translations = {
     w9: "Non-authorized points of sale are entirely barred from accessing technical assistance.",
 
     "contact-label": "CONTACT",
-    "contact-title": "Technical studio for engineering,<br>calibration and specialized repair.",
+    "contact-title": "Technical studio <br>for engineering, sales,<br>calibration and specialized repair.",
 
     email: "Corporate Channel",
     support: "Specialized Assistance Division",
@@ -268,6 +272,37 @@ navLinks.forEach(link => {
   });
 });
 
+/* =========================
+   NAV CLICK button (MOBILE)
+========================= */
+const menuBtn = document.querySelector(".menu-btn");
+const nav = document.querySelector(".nav");
+
+if (menuBtn && nav) {
+
+  // abrir / cerrar con botón
+  menuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    nav.classList.toggle("open");
+  });
+
+  // cerrar al hacer click fuera
+  document.addEventListener("click", (e) => {
+    const isClickInsideNav = nav.contains(e.target);
+    const isClickOnBtn = menuBtn.contains(e.target);
+
+    if (!isClickInsideNav && !isClickOnBtn) {
+      nav.classList.remove("open");
+    }
+  });
+
+  // cerrar al clicar un link
+  nav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+    });
+  });
+}
 
 /* =========================
    INIT
