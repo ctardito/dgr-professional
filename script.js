@@ -81,8 +81,8 @@ if (topBtn) {
 const translations = {
   es: {
     nav1: "Serie Spark",
-    nav2: " FAQs",
-    nav3: "Eventos & Colaboradores",
+    nav2: "Eventos & Colaboradores",
+    nav3: " FAQs",
     nav4: "Contacto",
 
     "hero-eyebrow": "ALTA INGENIERÍA APLICADA AL ARTE DEL CORTE",
@@ -162,8 +162,8 @@ const translations = {
 
   en: {
     nav1: "Spark Series",
-    nav2: " FAQs",
-    nav3: "Events & Collabs",
+    nav2: "Events & Collabs",
+    nav3: " FAQs",
     nav4: "Contact",
 
 
