@@ -494,6 +494,19 @@ section {
 }
 
 
+.collab-links {
+  display: flex;
+  justify-content: right;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.collab-links a {
+  text-decoration: none;
+  color: #111;
+  transition: .3s;
+}
+
 /* CONTACT */
 .contact-grid {
   display: grid;
