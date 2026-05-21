@@ -43,6 +43,16 @@ body{
   transform: translateY(40px) rotate(-20deg);
 }
 
+#hair-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9998;
+}
+
 /* SCROLL BAR */
 ::-webkit-scrollbar {
   display: none;
@@ -93,9 +103,9 @@ html, body {
   align-items:center;
   padding: 20px 6vw;
   z-index:1000;
-  backdrop-filter:blur(20px);
+  backdrop-filter:blur(10px);
   background:
-  rgba(255,255,255,.72);
+  rgba(255,255,255,.5);
 }
 
 .logo{
@@ -290,11 +300,14 @@ section{
 }
 
 /* PRODUCTS */
+
 .products-grid{
   display:grid;
   grid-template-columns:
   repeat(2,1fr);
   gap:40px;
+  width: 70vw;
+  justify-self: center;
 }
 
 .product-card{
@@ -353,6 +366,7 @@ section{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:80px;
+  align-items: stretch;
 }
 
 .contact-title{
@@ -364,6 +378,41 @@ section{
   color:#666;
   line-height:2;
 }
+
+/* MAPA CONTACTO */
+
+
+.contact-info{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.map-container{
+  width:100%;
+  min-height:420px;
+  border-radius:32px;
+  overflow:hidden;
+  box-shadow:
+  0 20px 60px rgba(0,0,0,.08);
+}
+
+.map-container iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+  .map-container{
+    min-height:300px;
+  }
+
+}
+
 
 /* FOOTER */
 .footer{
@@ -377,7 +426,7 @@ section{
 .footer-top{
   display:flex;
   justify-content:space-between;
-  align-items:flex-start;
+  align-items:flex-end;
 }
 
 .footer h3{
@@ -499,16 +548,24 @@ section{
   height: 70vh;   
 }
 
+.products-grid{
+  width: 100%;
+  justify-self: center;
+}
+
 .hero-content{
   width: 100%;
 }
 
-  .hero-description{
+.hero-description{
     font-size:18px;
   }
 
-
-
+.cursor-img img {
+  width: 0px;
+  height: 0px;
+  color: transparent;
+}
 
 
 }

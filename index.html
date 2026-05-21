@@ -1,57 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>DGR Professional</title>
-
   <link rel="icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="style.css" />
 </head>
-
-
-
-<div class="cursor-img">
-  <img src="assets/cursor-shaver.png" alt="cursor">
-</div>
-    <div id="hair-container"></div>
-
-
 <body>
 
-  <!-- NAVBAR -->
+  <div class="cursor-img">
+    <img src="assets/cursor-shaver.png" alt="cursor">
+  </div>
+  <div id="hair-container"></div>
 
   <header class="navbar">
-
- <a href="#hero" class="logo" id="logo">
-  <span class="logo-mask">
-    <img src="assets/logo/logo-dgr-01.svg" alt="DGR Professional logo">
-  </span>
-</a>
+    <a href="#hero" class="logo" id="logo">
+      <span class="logo-mask">
+        <img src="assets/logo/logo-dgr-01.svg" alt="DGR Professional logo">
+      </span>
+    </a>
 
     <nav class="nav">
-      <a href="#spark" data-key="nav1">Spark Series</a>
-      <a href="#garantia" data-key="nav2">Warranty</a>
-      <a href="#contacto" data-key="nav3">Contact</a>
+      <a href="#spark" data-key="nav1">Serie Spark</a>
+      <a href="#warranty" data-key="nav2">Garantía</a>
+      <a href="#contact" data-key="nav3">Contacto</a>
 
-  <div class="lang-switch">
-    <button id="lang-en">EN</button>
-  <span>|</span>
-  <button id="lang-es">ES</button>
-</div>
-
+      <div class="lang-switch">
+        <button id="lang-en">EN</button>
+        <span>|</span>
+        <button id="lang-es">ES</button>
+      </div>
     </nav>
 
     <div class="menu-btn">☰</div>
-
   </header>
 
-  <!-- HERO -->
-
   <section id="hero" class="hero">
-
     <div class="hero-video">
       <video autoplay muted loop playsinline>
         <source src="assets/video/video-hero.mp4" type="video/mp4">
@@ -60,259 +45,149 @@
     </div>
 
     <div class="hero-content">
-
-      <p class="eyebrow" data-key="hero-eyebrow">
-        PROFESSIONAL BARBER ENGINEERING
-      </p>
-
-      <h1 data-key="hero-title">
-        Tools built<br>
-        for mastery.
-      </h1>
-
-      <p class="hero-description" data-key="hero-desc">
-        When you know what you’re doing,<br>
-        you choose tools that match your level.
-      </p>
-
+      <p class="eyebrow" data-key="hero-eyebrow">ALTA INGENIERÍA APLICADA AL ARTE DEL CORTE</p>
+      <h1 data-key="hero-title">Instrumentos de culto<br>para el dominio absoluto.</h1>
+      <p class="hero-description" data-key="hero-desc">Cuando el oficio trasciende a la obra de arte, las herramientas desaparecen.<br>Solo prevalece la alta precisión.</p>
     </div>
-
   </section>
-
-  <!-- PRODUCTS -->
 
   <section id="spark" class="products reveal">
-
     <div class="section-heading">
-
-      <p class="section-label" data-key="spark-label">
-        SPARK SERIES
-      </p>
-
-      <h2 data-key="spark-title">
-        Created by experts.<br>
-        Built for professionals.
-      </h2>
-
+      <p class="section-label" data-key="spark-label">SERIE SPARK</p>
+      <h2 data-key="spark-title">Concebida por expertos.<br>Desarrollada para los arquitectos de la línea.</h2>
     </div>
 
+
+
     <div class="products-grid">
-
-      <!-- DASH -->
-
       <div class="product-card">
-
-        <img src="assets/dash.jpg" alt="DGR Dash clipper">
-
+        <img src="assets/img/product-land/dash.webp" alt="DGR Dash clipper">
         <div class="product-info">
-
           <h3>DGR Dash</h3>
-
-          <p data-key="dash">
-            Power under control.<br>
-            Built to dominate every cut with precision.
-          </p>
-
+          <p data-key="dash">Dash Clipper. Arquitectura de torque constante de 8.000 a 9.000 RPM...</p>
         </div>
-
       </div>
 
-      <!-- STRIKE -->
-
       <div class="product-card">
-
-        <img src="assets/strike.jpg" alt="DGR Strike trimmer">
-
+        <img src="assets/img/product-land/strike.webp" alt="DGR Strike trimmer">
         <div class="product-info">
-
           <h3>DGR Strike</h3>
-
-          <p data-key="strike">
-            Detail is not a finish.<br>
-            It’s your signature.
-          </p>
-
+          <p data-key="strike">Strike Trimmer. Geometría micrométrica y consistencia matemática a 8.000 RPM...</p>
         </div>
-
       </div>
 
-      <!-- ZERO -->
-
       <div class="product-card">
-
-        <img src="assets/zero.jpg" alt="DGR Zero shaver">
-
+        <img src="assets/img/product-land/zero.webp" alt="DGR Zero shaver">
         <div class="product-info">
-
           <h3>DGR Zero</h3>
-
-          <p data-key="zero">
-            The finish that separates clean from perfect.
-          </p>
-
+          <p data-key="zero">Zero Shaver. Triple eje cinemático de alta resistencia a 8.000 RPM reales...</p>
         </div>
-
       </div>
-
-      <!-- STORM -->
 
       <div class="product-card">
-
-        <img src="assets/storm.jpg" alt="DGR Storm air blower">
-
+        <img src="assets/img/product-land/storm.webp" alt="DGR Storm air blower">
         <div class="product-info">
-
           <h3>DGR Storm</h3>
-
-          <p data-key="storm">
-            High-speed airflow engineered for full workstation control.
-          </p>
-
+          <p data-key="storm">Storm Blower & Vacuum. Dinámica de fluidos avanzada a 160.000 RPM...</p>
         </div>
-
       </div>
-
     </div>
 
   </section>
 
-  <!-- WARRANTY -->
-
-  <section id="garantia" class="garantia reveal">
-
+  <section id="warranty" class="garantia reveal">
     <div class="section-heading">
-
-      <p class="section-label" data-key="support-label">
-        SUPPORT
-      </p>
-
-      <h2 data-key="warranty-title">
-        Warranty
-      </h2>
-
+      <p class="section-label" data-key="support-label">SOPORTE TÉCNICO</p>
+      <h2 data-key="warranty-title">Garantía de Ingeniería</h2>
     </div>
 
     <div class="text-block">
-
-      <p data-key="warranty-intro">
-        Here you will find the general warranty conditions for DGR Professional products.
-      </p>
-
-      <h3 data-key="w1">What is my warranty?</h3>
-
-      <p data-key="w2">
-        For products purchased through official distributors, proof of purchase is required to access warranty coverage.
-      </p>
-
-      <h3 data-key="w3">How long is the warranty?</h3>
-
-      <p data-key="w4">
-        All products are manufactured under the highest quality standards and tested before release.
-      </p>
-
-      <p data-key="w5">
-        Professional use: 2 years from invoice date for all electrical devices.
-      </p>
-
-      <h3 data-key="w6">Are there any exceptions?</h3>
+      <p data-key="warranty-intro">Certificación y condiciones de cobertura estructural para los sistemas DGR Professional.</p>
+      <h3 data-key="w1">¿Qué parámetros abarca el protocolo?</h3>
+      <p data-key="w2">Dispositivos adquiridos exclusivamente a través de la red de distribución autorizada...</p>
+      <h3 data-key="w3">Vigencia del ciclo de cobertura</h3>
+      <p data-key="w4">Sistemas calibrados bajo estándares de grado industrial y auditados...</p>
+      <p data-key="w5">Uso profesional de alta intensidad: 24 meses de cobertura integral...</p>
 
       <ul>
-        <li data-key="w7">Accidental damage is not covered.</li>
-        <li data-key="w8">Tampering by third parties voids the warranty.</li>
-        <li data-key="w9">Unauthorized distributors are not covered.</li>
+        <li data-key="w7">Quedan excluidos de este protocolo los fallos derivados de impactos directos...</li>
+        <li data-key="w8">Cualquier apertura del chasis o alteración de la arquitectura interna...</li>
+        <li data-key="w9">Los puntos de venta no autorizados quedan estrictamente revocados...</li>
       </ul>
-
     </div>
-
   </section>
 
-  <!-- CONTACT -->
+<section id="contact" class="contact reveal">
+  <div class="section-heading">
+    <p class="section-label" data-key="contact-label">CENTRAL TÉCNICA</p>
+    <h2 data-key="contact-title">
+      Diseñado para profesionales<br>que no negocian el control.
+    </h2>
+  </div>
 
-  <section id="contacto" class="contact reveal">
+  <div class="contact-grid">
 
-    <div class="section-heading">
-
-      <p class="section-label" data-key="contact-label">
-        CONTACT
-      </p>
-
-      <h2 data-key="contact-title">
-        Built for barbers<br>
-        who demand control.
-      </h2>
-
-    </div>
-
-    <div class="contact-grid">
-
+    <!-- Información -->
+    <div class="contact-info">
       <div>
-
-        <p class="contact-title" data-key="email">
-          Email
-        </p>
-
-        <p class="contact-text">
-          info@dgrprofessional.com
-        </p>
+        <p class="contact-title" data-key="email">Canal Corporativo</p>
+        <p class="contact-text">info@dgrprofessional.com</p>
 
         <p class="contact-text" data-key="address">
-          Av. Bon Pastor 33-45<br>
-          08930 Sant Adrià del Besòs<br>
-          Barcelona · Spain
+          Av. Bon Pastor 33–45<br>
+          08930 Sant Adrià de Besòs<br>
+          Barcelona · España
         </p>
-
       </div>
 
-      <div>
-
+      <div class="contact-block">
         <p class="contact-title" data-key="support">
-          Customer service
+          División de Asistencia Especializada
         </p>
 
         <p class="contact-text" data-key="schedule">
-          Monday to Friday<br>
-          9:00 a.m. — 6:00 p.m.
+          Lunes a viernes<br>
+          9:00 — 18:00
         </p>
-
       </div>
-
     </div>
 
-  </section>
+    <!-- Google Map -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=Av.+Bon+Pastor+33-45,+08930+Sant+Adrià+de+Besòs,+Barcelona&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
 
-  <!-- FOOTER -->
+  </div>
+</section>
 
   <footer class="footer">
-
     <div class="footer-top">
-
       <div>
-
         <h3>DGR Professional</h3>
-
-        <p data-key="footer-desc">
-          Precision barber engineering.
-        </p>
-
+        <p data-key="footer-desc">Alta ingeniería de precisión para el cuidado masculino de vanguardia.</p>
       </div>
-
       <div class="footer-links">
         <a href="#">Instagram</a>
         <a href="#">LinkedIn</a>
         <a href="#">YouTube</a>
       </div>
-
     </div>
-
+    
     <div class="footer-bottom" data-key="footer-rights">
-      DGR Professional © 2026. All rights reserved.
+      DGR Professional © 2026. Todos los derechos reservados.
     </div>
-
   </footer>
 
   <button id="topBtn">▲</button>
 
   <script src="script.js"></script>
-
 </body>
 </html>
