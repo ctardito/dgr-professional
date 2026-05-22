@@ -375,6 +375,7 @@ if (menuBtn && nav) {
 setLanguage(localStorage.getItem("lang") || "en");
 setActiveNav();
 
+
 /* =========================
    LOGO ANIMATION
 ========================= */
