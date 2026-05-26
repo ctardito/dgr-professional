@@ -128,8 +128,10 @@ const translations = {
 
     "collab-title": "Presencia en escenarios,<br>educación y cultura profesional.",
 
+    "collab-button": "Archivo de Eventos Descarga",
 
     "contact-label": "CONTACTO",
+
     "contact-title": "Estudio técnico de ingeniería,<br>distribución y soporte especializado.",
 
     "channel-title": "Canal Corporativo",
@@ -209,6 +211,7 @@ const translations = {
 
     "collab-title": "Presence across stages,<br>education and professional culture.",
 
+    "collab-button": "Events Archive Download",
 
     "contact-label": "CONTACT",
     "contact-title": "Technical engineering studio<br>for distribution and specialized support.",
