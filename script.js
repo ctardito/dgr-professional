@@ -128,7 +128,7 @@ const translations = {
 
     "collab-title": "Presencia en escenarios,<br>educación y cultura profesional.",
 
-    "collab-button": "Archivo de Eventos Descarga",
+    "collab-button": "Batalla de Barberos Download",
 
     "contact-label": "CONTACTO",
 
@@ -211,7 +211,7 @@ const translations = {
 
     "collab-title": "Presence across stages,<br>education and professional culture.",
 
-    "collab-button": "Events Archive Download",
+    "collab-button": "Batalla de Barberos Download",
 
     "contact-label": "CONTACT",
     "contact-title": "Technical engineering studio<br>for distribution and specialized support.",
