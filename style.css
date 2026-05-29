@@ -102,8 +102,7 @@ body {
   padding: 0px 6vw;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  background:
-    rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .5);
 }
 
 .logo {

@@ -141,6 +141,7 @@ const translations = {
     "distributor-title": "Distribuidor Oficial Sublime Beauty",
 
     "coverage-title": "Cobertura",
+
     "coverage": "Toda España",
 
     "phone-title": "Teléfono",
@@ -214,6 +215,7 @@ const translations = {
     "collab-button": "Batalla de Barberos Download",
 
     "contact-label": "CONTACT",
+
     "contact-title": "Technical engineering studio<br>for distribution and specialized support.",
 
     "channel-title": "Corporate Channel",
