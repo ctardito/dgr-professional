@@ -306,7 +306,7 @@ section {
   grid-template-columns:
     repeat(2, 1fr);
   gap: 40px;
-  width: 70vw;
+  width: 60vw;
   justify-self: center;
 }
 
@@ -324,13 +324,30 @@ section {
 }
 
 .product-card img {
-  width: 100%;
+  width: 25vw;
   display: block;
   border-radius: 32px;
 }
 
 .product-info {
+  width: 25vw;
   padding-top: 20px;
+}
+
+@media (max-width: 900px) {
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .product-card img {
+    width: 100%;
+  }
+
+  .product-info {
+    width: 100%;
+  }
 }
 
 .product-info h3 {
