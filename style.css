@@ -465,7 +465,7 @@ section {
 .collab-card {
   position: relative;
   min-width: auto;
-  height: 80vh;
+  height: 70vh;
   border-radius: 28px;
   overflow: hidden;
   flex-shrink: 0;
