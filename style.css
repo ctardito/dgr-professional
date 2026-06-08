@@ -337,12 +337,12 @@ section {
 @media (max-width: 900px) {
 
   .products-grid {
-     display: grid;
-  grid-template-columns:
-    repeat(2, 1fr);
-  gap: 40px;
-  width: auto;
-  justify-self: center;
+    display: grid;
+    grid-template-columns:
+      repeat(2, 1fr);
+    gap: 40px;
+    width: auto;
+    justify-self: center;
   }
 
   .product-card img {
