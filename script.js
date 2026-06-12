@@ -149,7 +149,7 @@ const translations = {
     "online-title": "Canales Digitales",
 
     "support-schedule-title": "Horario Atención",
-    "support-schedule": "Lunes a Viernes<br>09:00 am–18:00 pm",
+    "support-schedule": "Lunes a Viernes<br>09:00 am · 18:30 pm",
 
     "store-schedule-title": "Horario Tienda",
     "store-schedule": "Lunes a Viernes<br>8:30 am · 18:30 pm<br>Sábado 9:00 am · 14:00 pm",
@@ -232,7 +232,7 @@ const translations = {
     "online-title": "Digital Channels",
 
     "support-schedule-title": "Customer Support Hours",
-    "support-schedule": "Monday to Friday<br>09:00 am–18:00 pm",
+    "support-schedule": "Monday to Friday<br>09:00 am · 18:30 pm",
 
     "store-schedule-title": "Store Hours",
     "store-schedule": "Monday to Friday<br>8:30 am · 18:30 pm<br>Saturday<br>9:00 am · 14:00 pm",

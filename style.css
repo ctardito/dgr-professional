@@ -789,7 +789,7 @@ section {
   color: #111;
   transition: .3s;
   width: 32vw;
-  justify-content: center;
+  justify-content: right;
   display: flex;
 }
 
