@@ -28,9 +28,8 @@ window.addEventListener("scroll", () => {
 
   // BLUR SUAVE EN MOBILE + NORMAL EN DESKTOP
   const blur = isMobile
-    ? progress * 2   // MUY SUAVE (mobile)
+    ? progress * 4   // MUY SUAVE (mobile)
     : progress * 4;    // desktop más cinematográfico
-
   // MOVE
   const y = progress * 80;
 
@@ -484,9 +483,15 @@ if (collabCarousel && prevBtn && nextBtn) {
 ========================= */
 
 function changeImage(img) {
+  // Cambiar imagen principal
+  document.getElementById("mainImage").src = img.src;
 
-  document.getElementById("mainImage").src =
-    img.src;
+  // Quitar active de todos los thumbs
+  document.querySelectorAll(".thumbs img").forEach(thumb => {
+    thumb.classList.remove("active");
+  });
 
+  // Agregar active al seleccionado
+  img.classList.add("active");
 }
 
