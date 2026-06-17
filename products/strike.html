@@ -1,146 +1,325 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DGR Strike</title>
+
+  <title>DGR Strike | Professional Grade Trimmer for Precision Work</title>
+
+  <meta name="description"
+    content="DGR Strike is a professional-grade trimmer engineered for precision detailing. Stable 7,000–8,000 RPM motor, graphene-titanium blade and aluminum body for consistent performance in professional barber environments.">
+
   <link rel="icon" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../style.css">
+
+  <!-- SEO: Product Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "DGR Strike",
+    "description": "Professional-grade trimmer engineered for precision work in barber environments.",
+    "brand": {
+    "@type": "Brand",
+    "name": "DGR Professional"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-<header class="navbar">
-  <a href="../index.html#hero" class="logo" id="logo">
-    <span class="logo-mask">
-      <img src="../assets/logo/logo-dgr-01.svg" alt="DGR Professional logo">
-    </span>
-  </a>
+  <div class="cursor-img">
+    <img src="../assets/cursor-shaver.png" alt="cursor">
+  </div>
+  <div id="hair-container"></div>
 
-  <nav class="nav">
-    <a href="../index.html#spark">Serie Spark</a>
-    <a href="../index.html#collab">Eventos & Colaboradores</a>
-    <a href="../index.html#warranty">Garantía</a>
-    <a href="../index.html#contact">Contacto</a>
-  </nav>
+  <header class="navbar">
+    <a href="../index.html#hero" class="logo" id="logo">
+      <span class="logo-mask">
+        <img src="../assets/logo/logo-dgr-01.svg" alt="DGR Professional logo">
+      </span>
+    </a>
 
-  <div class="menu-btn">☰</div>
-</header>
+    <nav class="nav">
+      <a href="../index.html#spark" data-key="nav1">Serie Spark</a>
+      <a href="../index.html#collab" data-key="nav2">Eventos & Colaboradores</a>
+      <a href="../index.html#warranty" data-key="nav3">Garantía</a>
+      <a href="../index.html#contact" data-key="nav4">Contacto</a>
 
-<section class="product-page">
+      <div class="lang-switch">
+        <button id="lang-en">EN</button>
+        <span>|</span>
+        <button id="lang-es">ES</button>
+      </div>
+    </nav>
 
-<div class="product-gallery">
+    <div class="menu-btn">☰</div>
+  </header>
 
-<div class="thumbs">
-<img class="active" src="../assets/products/strike/strike-1.webp" onclick="changeImage(this)">
-<img src="../assets/products/strike/strike-2.webp" onclick="changeImage(this)">
-<img src="../assets/products/strike/strike-3.webp" onclick="changeImage(this)">
-<img src="../assets/products/strike/strike-4.webp" onclick="changeImage(this)">
-</div>
 
-<div class="main-image">
-<img id="mainImage" src="../assets/products/strike/strike-1.webp" alt="DGR Strike">
-</div>
+  <!-- ================= HERO ================= -->
+  <section class="product-page">
 
-</div>
+    <div class="product-gallery">
 
-<div class="product-details">
+      <div class="thumbs">
+        <img class="active" src="../assets/products/strike/strike-1.webp" onclick="changeImage(this)">
+        <img src="../assets/products/strike/strike-2.webp" onclick="changeImage(this)">
+        <img src="../assets/products/strike/strike-3.webp" onclick="changeImage(this)">
+        <img src="../assets/products/strike/strike-4.webp" onclick="changeImage(this)">
+      </div>
 
-<span class="product-category">
-TRIMMER
-</span>
+      <div class="main-image">
+        <img id="mainImage" src="../assets/products/strike/strike-1.webp" alt="DGR Strike Professional Trimmer">
+      </div>
 
-<h1>DGR Strike</h1>
+    </div>
 
-<p class="product-price">
-€149.90
-</p>
+    <div class="product-details">
 
-<p class="product-description">
-El detalle no es un remate. Es tu firma.
-Diseñada para perfilar, delinear y limpiar contornos con máxima precisión.
-Motor mecánico 360° trabajando entre 7.000 y 8.000 RPM, cuchilla de grafeno con baño de titanio y cuerpo de aluminio para una estabilidad perfecta.
-</p>
+      <span class="product-category" data-key="category" data-es="TRIMMER · HERRAMIENTA PROFESIONAL">
+        TRIMMER · PROFESSIONAL GRADE TOOL
+      </span>
 
-<a href="https://www.sublimebw.com" target="_blank" class="buy-btn">
-Comprar ahora
-</a>
+      <h1 data-key="title" data-es="DGR Strike">
+        DGR Strike
+      </h1>
 
-</div>
+      <!-- PRINCIPLE STATEMENT (FROM PDF LOGIC) -->
+      <p class="product-hook" data-key="hook" data-es="Rendimiento estable en manos de profesionales.">
+        Stable performance in professional hands.
+      </p>
 
-</section>
+      <p class="product-price">€149.90</p>
 
-<section class="specs">
+      <!-- TRUST BAR -->
+      <div class="trust-strip">
+        <span data-key="trust_1" data-es="Disponibilidad inmediata">Immediate availability</span>
+        <span>|</span>
+        <span data-key="trust_2" data-es="Soporte técnico">Technical support</span>
+        <span>|</span>
+        <span data-key="trust_3" data-es="Garantía de fabricación">Manufacturing warranty</span>
+      </div>
 
-<div class="section-heading">
-<p class="section-label">
-FICHA TÉCNICA
-</p>
+      <!-- CORE STORY (BASED ON PDF STRIKE PAGE) -->
+      <p class="product-description" data-key="description"
+        data-es="Diseñada para entornos profesionales donde la precisión no es opcional. Motor 360°, estabilidad térmica y control constante en uso prolongado.">
 
-<h2>
-Precisión absoluta.
-</h2>
-</div>
+        Designed for professional environments where precision is not optional.
 
-<div class="spec-grid">
+        The DGR Strike integrates a 360° rotary motor operating between 7,000–8,000 RPM, a graphene blade with titanium
+        coating, and a full aluminum chassis engineered for thermal stability and consistent control under continuous
+        use.
 
-<div class="spec-item">
-<span>Motor</span>
-<strong>360° Rotativo</strong>
-</div>
+        Built for contouring, detailing and technical finishing in professional barber workflows.
+      </p>
 
-<div class="spec-item">
-<span>RPM</span>
-<strong>7.000 / 8.000</strong>
-</div>
+      <!-- BUY BUTTON -->
 
-<div class="spec-item">
-<span>Batería</span>
-<strong>2000 mAh</strong>
-</div>
+      <a href="https://www.sublimebw.com" target="_blank" class="buy-btn" data-key="cta" data-es="Comprar ahora">
+        Buy now
+      </a>
 
-<div class="spec-item">
-<span>Cuchilla</span>
-<strong>Grafeno + Titanio</strong>
-</div>
+    </div>
+  </section>
 
-<div class="spec-item">
-<span>Carcasa</span>
-<strong>Aluminio</strong>
-</div>
+  <!-- ================= ENGINEERING BLOCK ================= -->
+  <section class="specs">
 
-<div class="spec-item">
-<span>Carga</span>
-<strong>USB-C</strong>
-</div>
+    <div class="section-heading">
+      <p class="section-label" data-key="eng_label" data-es="INGENIERÍA">ENGINEERING</p>
+      <h2 data-key="eng_title" data-es="Precisión operativa">Operational precision</h2>
+    </div>
 
-</div>
+    <div class="spec-grid">
 
-</section>
+      <div class="spec-item"><span>Motor</span><strong>360° Rotary</strong></div>
+      <div class="spec-item"><span>RPM</span><strong>7,000–8,000</strong></div>
+      <div class="spec-item"><span>Battery</span><strong>2000 mAh</strong></div>
+      <div class="spec-item"><span>Blade</span><strong>Graphene + Titanium</strong></div>
+      <div class="spec-item"><span>Body</span><strong>Aluminum</strong></div>
+      <div class="spec-item"><span>Charge</span><strong>USB-C</strong></div>
 
-<footer class="footer">
-<div class="footer-top">
-<div>
-<h3>DGR Professional ®</h3>
-<p>Alta ingeniería de precisión para el cuidado masculino de vanguardia.</p>
-</div>
-</div>
+    </div>
 
-<div class="footer-second">
-<div class="footer-bottom">
-DGR Professional © 2026. Todos los derechos reservados.
-</div>
+  </section>
 
-<div class="footer-links">
-<a href="https://www.sublimebw.com">www.sublimebw.com</a>
-</div>
-</div>
-</footer>
+  <!-- ================= STORYTELLING (BASED ON PDF TONE) ================= -->
+  <section class="story">
 
-<button id="topBtn">▲</button>
+    <div class="section-heading">
+      <p class="section-label" data-key="story_label" data-es="FILOSOFÍA DGR">DGR PHILOSOPHY</p>
+      <h2 data-key="story_title" data-es="Herramientas creadas para expertos">Tools built for professionals</h2>
+    </div>
 
-<script src="../script.js"></script>
+    <p class="story-text" data-key="story_text"
+      data-es="Cuando sabes lo que haces, eliges herramientas a tu altura. Diseñada para trabajo real, no para apariencia.">
+
+      When you know what you are doing, you choose tools that match your level.
+
+      The DGR Strike is engineered for professionals who demand consistency, control and durability over
+      appearance-driven design.
+
+      Built to integrate into real workflows, not to interrupt them.
+    </p>
+
+  </section>
+
+
+  <!-- ================= PRODUCT ECOSYSTEM ================= -->
+
+  <section class="ecosystem">
+
+    <div class="section-heading">
+      <p class="section-label">DGR SYSTEM</p>
+      <h2>Professional ecosystem tools</h2>
+    </div>
+
+ <div class="products-grid-page">
+
+      <!-- DASH -->
+      <a href="dash.html" class="product-card-page">
+
+        <div class="product-image-page">
+          <img src="../assets/img-product-land/dash.webp" alt="DGR Dash clipper">
+
+          <div class="products-overlay-page">
+            <span class="product-tag">CLIPPER</span>
+          </div>
+        </div>
+
+        <div class="product-info-page">
+          <h3>DGR Dash</h3>
+        </div>
+
+      </a>
+
+      <!-- STRIKE -->
+      <a href="strike.html" class="product-card-page">
+
+        <div class="product-image-page">
+          <img src="../assets/img-product-land/strike.webp" alt="DGR Strike trimmer">
+
+          <div class="products-overlay-page">
+            <span class="product-tag">TRIMMER</span>
+          </div>
+        </div>
+
+        <div class="product-info-page">
+          <h3>DGR Strike</h3>
+        </div>
+
+      </a>
+
+      <!-- ZERO -->
+      <a href="zero.html" class="product-card-page">
+
+        <div class="product-image-page">
+          <img src="../assets/img-product-land/zero.webp" alt="DGR Zero shaver">
+
+          <div class="products-overlay-page">
+            <span class="product-tag">SHAVER</span>
+          </div>
+        </div>
+
+        <div class="product-info-page">
+          <h3>DGR Zero</h3>
+        </div>
+
+      </a>
+
+      <!-- STORM -->
+      <a href="storm.html" class="product-card-page">
+
+        <div class="product-image-page">
+          <img src="../assets/img-product-land/storm.webp" alt="DGR Storm air blower">
+
+          <div class="products-overlay-page">
+            <span class="product-tag">BLOWER</span>
+          </div>
+        </div>
+
+        <div class="product-info-page">
+          <h3>DGR Storm</h3>
+        </div>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= INCLUDED ================= -->
+  <section class="included">
+
+    <div class="section-heading">
+      <p class="section-label" data-key="box_label" data-es="CONTENIDO">IN THE BOX</p>
+      <h2 data-key="box_title" data-es="Pack profesional">Professional kit</h2>
+    </div>
+
+    <ul class="included-list">
+      <li data-key="box_1" data-es="Unidad DGR Strike">DGR Strike unit</li>
+      <li data-key="box_2" data-es="Cable USB-C">USB-C cable</li>
+      <li data-key="box_3" data-es="Kit de mantenimiento">Maintenance kit</li>
+      <li data-key="box_4" data-es="Protector de cuchilla">Blade guard</li>
+      <li data-key="box_5" data-es="Manual técnico">Technical manual</li>
+    </ul>
+
+  </section>
+
+  <!-- ================= ENGINEERING TRUTH (FROM PDF STYLE) ================= -->
+  <section class="value-strip">
+
+    <div class="value-item">
+      <h3 class="v_title" data-key="v1_title" data-es="Consistencia operativa">Operational consistency</h3>
+      <p class="v_text" data-key="v1_text" data-es="Rendimiento estable en sesiones prolongadas.">Stable performance in
+        extended sessions.</p>
+    </div>
+
+    <div class="value-item">
+      <h3 class="v_title" data-key="v2_title" data-es="Control del corte">Cutting control</h3>
+      <p class="v_text" data-key="v2_text" data-es="Precisión en líneas y contornos técnicos.">Precision in lines and
+        technical detailing.</p>
+    </div>
+
+    <div class="value-item">
+      <h3 class="v_title" data-key="v3_title" data-es="Arquitectura metálica">Metal architecture</h3>
+      <p class="v_text" data-key="v3_text" data-es="Estructura en aluminio para uso intensivo.">Aluminum structure for
+        intensive use.</p>
+    </div>
+
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div>
+        <h3>DGR Professional ®</h3>
+        <p>Precision engineering for professional barber environments.</p>
+      </div>
+    </div>
+
+    <div class="footer-second">
+      <div class="footer-bottom">
+        DGR Professional © 2026. All rights reserved.
+      </div>
+
+      <div class="footer-links">
+        <a href="https://www.sublimebw.com">www.sublimebw.com</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <button id="topBtn">▲</button>
+
+  <script src="../script.js"></script>
 
 </body>
+
 </html>
