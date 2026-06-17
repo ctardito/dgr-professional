@@ -1014,11 +1014,6 @@ padding-top: 40px;
 scale: 0.8;
 }
 
-.spec-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
 }
 
 .main-image img {
@@ -1093,15 +1088,18 @@ scale: 0.8;
 }
 
 .spec-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .spec-item {
   padding: 30px;
   border: 1px solid rgba(0, 0, 0, .08);
   border-radius: 24px;
+  width: 250px;
 }
 
 .spec-item span {

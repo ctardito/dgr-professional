@@ -28,8 +28,8 @@ window.addEventListener("scroll", () => {
 
   // BLUR SUAVE EN MOBILE + NORMAL EN DESKTOP
   const blur = isMobile
-    ? progress * 4   // MUY SUAVE (mobile)
-    : progress * 4;    // desktop más cinematográfico
+    ? progress * 4   
+    : progress * 4;    
   // MOVE
   const y = progress * 80;
 
