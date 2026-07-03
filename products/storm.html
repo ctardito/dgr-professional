@@ -32,16 +32,37 @@
 
 <div class="product-gallery">
 
-<div class="thumbs">
-<img class="active" src="../assets/products/storm/storm-1.webp" onclick="changeImage(this)">
-<img src="../assets/products/storm/storm-2.webp" onclick="changeImage(this)">
-<img src="../assets/products/storm/storm-3.webp" onclick="changeImage(this)">
-<img src="../assets/products/storm/storm-4.webp" onclick="changeImage(this)">
-</div>
+  <div class="thumbs">
+    <img class="active"
+         src="../assets/products/storm/storm-1.webp"
+         onclick="changeMedia(this)">
 
-<div class="main-image">
-<img id="mainImage" src="../assets/products/storm/storm-1.webp" alt="DGR Storm">
-</div>
+    <img src="../assets/products/storm/storm-2.webp"
+         onclick="changeMedia(this)">
+
+    <img src="../assets/products/storm/storm-3.webp"
+         onclick="changeMedia(this)">
+
+    <video autoplay muted loop playsinline preload="auto"
+           src="../assets/products/storm/storm-4.webm"
+           onclick="changeMedia(this)">
+    </video>
+  </div>
+
+  <div class="main-image">
+   
+    <img id="mainImage"
+         src="../assets/products/storm/storm-1.webp"
+         alt="DGR Storm"> 
+
+    <video id="mainVideo"
+class="video-container"
+           controls
+           style="display: none;"
+           autoplay muted loop playsinline preload="auto">
+    </video>
+
+  </div>
 
 </div>
 

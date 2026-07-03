@@ -482,16 +482,41 @@ if (collabCarousel && prevBtn && nextBtn) {
    PRODUCT PAGE
 ========================= */
 
-function changeImage(img) {
-  // Cambiar imagen principal
-  document.getElementById("mainImage").src = img.src;
+function changeMedia(media) {
 
-  // Quitar active de todos los thumbs
-  document.querySelectorAll(".thumbs img").forEach(thumb => {
-    thumb.classList.remove("active");
-  });
+    const mainImage = document.getElementById("mainImage");
+    const mainVideo = document.getElementById("mainVideo");
 
-  // Agregar active al seleccionado
-  img.classList.add("active");
+    // Quitar active de todas las miniaturas
+    document.querySelectorAll(".thumbs img, .thumbs video").forEach(item => {
+        item.classList.remove("active");
+    });
+
+    // Activar la seleccionada
+    media.classList.add("active");
+
+    // Si es una imagen
+    if (media.tagName === "IMG") {
+
+        mainImage.src = media.src;
+        mainImage.style.display = "block";
+
+        mainVideo.pause();
+        mainVideo.style.display = "none";
+        mainVideo.removeAttribute("src");
+
+    }
+
+    // Si es un vídeo
+    else if (media.tagName === "VIDEO") {
+
+        mainVideo.src = media.currentSrc || media.src;
+        mainVideo.load();
+        mainVideo.play();
+
+        mainVideo.style.display = "block";
+        mainImage.style.display = "none";
+
+    }
+
 }
-
