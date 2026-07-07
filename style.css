@@ -834,7 +834,7 @@ section {
 #topBtn {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 80px;
   width: 52px;
   height: 52px;
   border: none;
@@ -1008,13 +1008,14 @@ width: 300px;
 .thumbs {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  height: 60vh;
+  justify-content: space-between;
 }
 
 .thumbs img {
   width: auto;
-  height: 80px;
-  border-radius: 18px;
+  height: 70px;
+  border-radius: 12px;
   cursor: pointer;
   opacity: 0.6;
   transition: opacity .3s ease, transform .3s ease, box-shadow .3s ease;
@@ -1032,9 +1033,9 @@ width: 300px;
 
 .thumbs video {
   width: 64.5px;
-  height: 80px;
+  height: 70px;
   object-fit: cover;
-  border-radius: 18px;
+  border-radius: 12px;
   cursor: pointer;
   opacity: 0.6;
   background-color: black;
@@ -1250,6 +1251,43 @@ width: 300px;
 .product-card-page p {
   color: #777;
 }
+
+.included-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.included-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.included-image img {
+  width: auto;
+  height: 60vh;
+  display: block;
+  border-radius: 32px;
+}
+
+.included-list {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .included-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .included-image img {
+        width: auto;
+        max-height: 60vh;
+    }
+}
+
 @media (max-width: 1000px) {
 
   .product-page {
@@ -1268,9 +1306,19 @@ width: 300px;
 }
 
 .thumbs {
-  display: flex;
-  flex-direction: row !important;
-  gap: 20px;
+          display: flex;
+        flex-direction: row !important;
+          gap: 10px;
+        justify-content: center;
+        height: fit-content;
+}
+
+.thumbs img {
+         height: 70px;
+}
+
+.thumbs video {
+    height: 70px;
 }
 
 .main-image img {
