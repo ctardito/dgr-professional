@@ -4,191 +4,274 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DGR Dash</title>
+
+  <title>DGR Dash | Dash Clipper de Precisión para Barbería Profesional</title>
+
+  <meta name="description"
+    content="Descubre DGR Dash Clipper. Arquitectura de torque constante de 8.000 a 9.000 RPM. Motor mecánico 360° y celda de 3.200 mAh.">
+
   <link rel="icon" href="../assets/favicon.svg">
   <link rel="stylesheet" href="../style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "DGR Dash Clipper",
+    "image": "../assets/products/dash/dash-1.webp",
+    "description": "Cortadora profesional con motor mecánico 360° a 8.000-9.000 RPM, chasis de aluminio y batería de 3.200 mAh.",
+    "brand": {
+      "@type": "Brand",
+      "name": "DGR Professional"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.sublimebw.com",
+      "priceCurrency": "EUR",
+      "price": "189.90",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
+  <div class="cursor-img" aria-hidden="true">
+    <img src="../assets/cursor-clipper.png" alt="">
+  </div>
+  <div id="hair-container" aria-hidden="true"></div>
+
   <header class="navbar">
-    <a href="../index.html#hero" class="logo" id="logo">
+    <a href="../index.html#hero" class="logo" id="logo" aria-label="DGR Professional Home">
       <span class="logo-mask">
-        <img src="../assets/logo/logo-dgr-01.svg" alt="DGR Professional logo">
+        <img src="../assets/logo/logo-dgr-01.svg" alt="DGR Professional Logo">
       </span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegación Principal">
       <a href="../index.html#spark" data-key="nav1">Serie Spark</a>
       <a href="../index.html#collab" data-key="nav2">Eventos & Colaboradores</a>
       <a href="../index.html#warranty" data-key="nav3">Garantía</a>
       <a href="../index.html#contact" data-key="nav4">Contacto</a>
 
       <div class="lang-switch">
-        <button id="lang-en">EN</button>
-        <span>|</span>
-        <button id="lang-es">ES</button>
+        <button id="lang-en" aria-label="Change language to English">EN</button>
+        <span aria-hidden="true">|</span>
+        <button id="lang-es" aria-label="Cambiar idioma a Español">ES</button>
       </div>
     </nav>
 
-    <div class="menu-btn">☰</div>
+    <div class="menu-btn" role="button" aria-label="Abrir menú de navegación" tabindex="0">☰</div>
   </header>
 
-  <section class="product-page">
+  <section class="product-page" aria-label="Product Details">
 
-<div class="product-gallery">
+    <div class="product-gallery">
+      <div class="thumbs">
+        <img class="active" src="../assets/products/dash/dash-1.webp" onclick="changeMedia(this)">
+        <img src="../assets/products/dash/dash-2.webp" onclick="changeMedia(this)">
+        <img src="../assets/products/dash/dash-3.webp" onclick="changeMedia(this)">
+        <video autoplay muted loop playsinline preload="auto" src="../assets/products/dash/dash-4.webm"
+          onclick="changeMedia(this)"></video>
+        <img src="../assets/products/dash/dash-5.webp" onclick="changeMedia(this)">
+      </div>
 
-  <div class="thumbs">
-    <img class="active"
-         src="../assets/products/dash/dash-1.webp"
-         onclick="changeMedia(this)">
-
-    <img src="../assets/products/dash/dash-2.webp"
-         onclick="changeMedia(this)">
-
-    <img src="../assets/products/dash/dash-3.webp"
-         onclick="changeMedia(this)">
-
-    <video autoplay muted loop playsinline preload="auto"
-           src="../assets/products/dash/dash-4.webm"
-           onclick="changeMedia(this)">
-    </video>
-  </div>
-
-  <div class="main-image">
-   
-    <img id="mainImage"
-         src="../assets/products/dash/dash-1.webp"
-         alt="DGR Dash"> 
-
-    <video id="mainVideo"
-class="video-container"
-           controls
-           style="display: none;"
-           autoplay muted loop playsinline preload="auto">
-    </video>
-
-  </div>
-
-</div>
-
-    <div class="product-details">
-
-      <span class="product-category">
-        CLIPPER
-      </span>
-
-      <h1>DGR Dash</h1>
-
-      <p class="product-price">
-        €179.90
-      </p>
-
-      <p class="product-description">
-        Diseñada por expertos para dominar el corte con precisión.
-        Trabaja entre 8.000 y 9.000 RPM gracias a su motor mecánico 360°,
-        ofreciendo una potencia constante y estable en cada pasada.
-        Equipada con cuchilla de grafeno bañada en titanio, pantalla inteligente,
-        batería de larga duración y carcasa de aluminio para un rendimiento profesional.
-      </p>
-
-      <a href="https://www.sublimebw.com" target="_blank" class="buy-btn">
-        Comprar ahora
-      </a>
-
+      <div class="main-image">
+        <img id="mainImage" src="../assets/products/dash/dash-1.webp" alt="DGR Dash">
+        <video id="mainVideo" class="video-container" controls style="display: none;" autoplay muted loop playsinline
+          preload="auto"></video>
+      </div>
     </div>
 
-  </section>
+    <div class="product-details">
+      <span class="product-category" data-key="dash_category" data-es="CLIPPER · PRECISIÓN MECÁNICA">
+        CLIPPER · MECHANICAL PRECISION
+      </span>
 
-  <section class="specs">
+      <h1 data-key="dash_title" data-es="DGR Dash">
+        DGR Dash
+      </h1>
 
-    <div class="section-heading">
-
-      <p class="section-label">
-        FICHA TÉCNICA
+      <p class="product-hook" data-key="dash_hook" data-es="Diseñada por expertos para dominar el corte con precisión.">
+        Diseñada por expertos para dominar el corte con precisión.
       </p>
 
-      <h2>
-        Ingeniería de precisión.
-      </h2>
+      <p class="product-price" aria-label="Precio: 189 euros con 90 céntimos">€189.90</p>
 
+      <div class="trust-strip">
+        <span data-key="trust_1" data-es="Disponibilidad inmediata">Immediate availability</span>
+        <span aria-hidden="true">|</span>
+        <span data-key="trust_2" data-es="Soporte técnico especializado">Specialized technical support</span>
+        <span aria-hidden="true">|</span>
+        <span data-key="trust_3" data-es="Garantía estructural DGR">DGR structural warranty</span>
+      </div>
+
+      <p class="product-description" data-key="dash_description"
+        data-es="La Dash Clipper trabaja entre 8.000 y 9.000 rpm, un rango pensado para cortar con firmeza, sin atropellarse y sin perder la línea. Su robusto motor mecánico 360° entrega una fuerza constante y estable. Entregando hasta 12 cortes con una sola carga gracias a su batería de 3.200 mAh.">
+        La Dash Clipper trabaja entre 8.000 y 9.000 rpm, un rango pensado para cortar con firmeza, sin atropellarse y
+        sin perder la línea. Su robusto motor mecánico 360° entrega una fuerza constante y estable. Entregando hasta 12
+        cortes con una sola carga gracias a su batería de 3.200 mAh.
+      </p>
+
+      <a href="https://www.sublimebw.com" target="_blank" class="buy-btn" data-key="strike_cta"
+        data-es="Adquirir Instrumento">
+        Acquire Instrument
+      </a>
+    </div>
+  </section>
+
+  <section class="specs" aria-label="Technical Specifications">
+    <div class="section-heading">
+      <p class="section-label" data-key="eng_label" data-es="INGENIERÍA">ENGINEERING</p>
+      <h2 data-key="dash_eng_title" data-es="Rendimiento y temperatura bajo control">Performance and temperature under
+        control</h2>
     </div>
 
     <div class="spec-grid">
-
-      <div class="spec-item">
-        <span>Motor</span>
-        <strong>360° Rotativo</strong>
+      <div class="spec-item"><span data-key="motor" data-es="Motor">Motor</span><strong>360° Rotary</strong></div>
+      <div class="spec-item"><span>RPM</span><strong>8,000–9,000</strong></div>
+      <div class="spec-item"><span data-key="battery" data-es="Batería">Battery</span><strong>3200 mAh</strong></div>
+      <div class="spec-item"><span data-key="blade" data-es="Cuchilla">Blade</span><strong>Graphene + Titanium
+          45°</strong></div>
+      <div class="spec-item"><span data-key="body" data-es="Cuerpo">Body</span><strong>Aluminum + Rubber Grip</strong>
       </div>
-
-      <div class="spec-item">
-        <span>RPM</span>
-        <strong>8.000 / 9.000</strong>
+      <div class="spec-item"><span data-key="charge" data-es="Carga">Charge</span><strong>USB-C + Smart Display</strong>
       </div>
+    </div>
+  </section>
 
-      <div class="spec-item">
-        <span>Batería</span>
-        <strong>3200 mAh</strong>
-      </div>
-
-      <div class="spec-item">
-        <span>Autonomía</span>
-        <strong>Hasta 12 cortes</strong>
-      </div>
-
-      <div class="spec-item">
-        <span>Cuchilla</span>
-        <strong>Grafeno + Titanio</strong>
-      </div>
-
-      <div class="spec-item">
-        <span>Carcasa</span>
-        <strong>Aluminio</strong>
-      </div>
-
-      <div class="spec-item">
-        <span>Pantalla</span>
-        <strong>Inteligente</strong>
-      </div>
-
-      <div class="spec-item">
-        <span>Carga</span>
-        <strong>USB-C</strong>
-      </div>
-
+  <section class="story" aria-label="Design Philosophy">
+    <div class="section-heading">
+      <p class="section-label" data-key="story_label" data-es="FILOSOFÍA DGR">DGR PHILOSOPHY</p>
+      <h2 data-key="dash_story_title" data-es="Estabilidad y dominio en cada pasada">Estabilidad y dominio en cada
+        pasada</h2>
     </div>
 
+    <p class="story-text" data-key="dash_story_text"
+      data-es="La robustez de su cuerpo de metal aporta un peso específico para brindar estabilidad. Combinado con una cuchilla de grafeno bañada en titanio con una abertura de 45° y un agarre ergonómico de caucho antideslizante, es la herramienta definitiva.">
+      La robustez de su cuerpo de metal aporta un peso específico para brindar estabilidad. Combinado con una cuchilla
+      de grafeno bañada en titanio con una abertura de 45° y un agarre ergonómico de caucho antideslizante, es la
+      herramienta definitiva.
+    </p>
+  </section>
+
+  <section class="ecosystem" aria-label="Ecosistema DGR">
+    <div class="section-heading">
+      <p class="section-label" data-key="eco_label" data-es="SISTEMA INTEGRADO DGR">INTEGRATED DGR SYSTEM</p>
+      <h2 data-key="eco_title" data-es="Ecosistema de ingeniería para el corte">Engineering ecosystem for vanguard
+        grooming</h2>
+    </div>
+
+    <div class="products-grid-page">
+      <a href="dash.html" class="product-card-page" aria-label="Ver detalles de DGR Dash Clipper">
+        <div class="product-image-page">
+          <img src="../assets/img-product-land/dash.webp" alt="DGR Dash Clipper - Máquina de corte principal">
+          <div class="products-overlay-page"><span class="product-tag" data-key="tag-clipper">CLIPPER</span></div>
+        </div>
+        <div class="product-info-page">
+          <h3>DGR Dash</h3>
+        </div>
+      </a>
+
+      <a href="strike.html" class="product-card-page" aria-label="Ver detalles de DGR Strike Trimmer">
+        <div class="product-image-page">
+          <img src="../assets/img-product-land/strike.webp" alt="DGR Strike Trimmer - Máquina de contornos">
+          <div class="products-overlay-page"><span class="product-tag" data-key="tag-trimmer">TRIMMER</span></div>
+        </div>
+        <div class="product-info-page">
+          <h3>DGR Strike</h3>
+        </div>
+      </a>
+
+      <a href="zero.html" class="product-card-page" aria-label="Ver detalles de DGR Zero Shaver">
+        <div class="product-image-page">
+          <img src="../assets/img-product-land/zero.webp" alt="DGR Zero Shaver - Rasuradora de alta resistencia">
+          <div class="products-overlay-page"><span class="product-tag" data-key="tag-shaver">SHAVER</span></div>
+        </div>
+        <div class="product-info-page">
+          <h3>DGR Zero</h3>
+        </div>
+      </a>
+
+      <a href="storm.html" class="product-card-page" aria-label="Ver detalles de DGR Storm Air Blower">
+        <div class="product-image-page">
+          <img src="../assets/img-product-land/storm.webp"
+            alt="DGR Storm Air Blower - Secador y purificador de alta velocidad">
+          <div class="products-overlay-page"><span class="product-tag" data-key="tag-blower">BLOWER</span></div>
+        </div>
+        <div class="product-info-page">
+          <h3>DGR Storm</h3>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="included" aria-label="Package Contents">
+    <div class="section-heading">
+      <p class="section-label" data-key="box_label" data-es="CONTENIDO">IN THE BOX</p>
+      <h2 data-key="box_title" data-es="Dotación Profesional">Professional kit</h2>
+    </div>
+
+    <div class="included-content">
+      <div class="included-image">
+        <img src="../assets/products/dash/dash-6.webp" alt="Componentes incluidos en el kit premium de DGR Dash"
+          loading="lazy">
+      </div>
+
+      <ul class="included-list">
+        <li data-key="dash_box_1" data-es="Unidad DGR Dash Clipper">Unidad DGR Dash Clipper</li>
+        <li data-key="dash_box_2" data-es="Cable de carga USB-C">Cable de carga USB-C</li>
+        <li data-key="dash_box_3" data-es="Kit técnico de mantenimiento">Kit técnico de mantenimiento</li>
+        <li data-key="box_4" data-es="Protector estructural de cuchilla">Protector estructural de cuchilla</li>
+        <li data-key="box_5" data-es="Manual de ingeniería y uso">Manual de ingeniería y uso</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="value-strip" aria-label="Valores estructurales">
+    <div class="value-item">
+      <h3 class="v_title" data-key="dash_v1_title" data-es="Pantalla inteligente">Pantalla inteligente</h3>
+      <p class="v_text" data-key="dash_v1_text"
+        data-es="Visualiza la batería restante y las revoluciones de trabajo en tiempo real.">Visualiza la batería
+        restante y las revoluciones de trabajo en tiempo real.</p>
+    </div>
+
+    <div class="value-item">
+      <h3 class="v_title" data-key="dash_v2_title" data-es="Disipación térmica">Disipación térmica</h3>
+      <p class="v_text" data-key="dash_v2_text"
+        data-es="Carcasa de aluminio que mantiene la máquina en temperatura óptima.">Carcasa de aluminio que mantiene la
+        máquina en temperatura óptima.</p>
+    </div>
+
+    <div class="value-item">
+      <h3 class="v_title" data-key="dash_v3_title" data-es="Agarre antideslizante">Agarre antideslizante</h3>
+      <p class="v_text" data-key="dash_v3_text" data-es="Caucho incorporado para evitar accesorios adicionales.">Caucho
+        incorporado para evitar accesorios adicionales.</p>
+    </div>
   </section>
 
   <footer class="footer">
-
     <div class="footer-top">
       <div>
         <h3>DGR Professional ®</h3>
-        <p data-key="footer-desc">
-          Alta ingeniería de precisión para el cuidado masculino de vanguardia.
-        </p>
+        <p data-key="footer-desc" data-es="Alta ingeniería de precisión para el cuidado masculino de vanguardia.">
+          High-precision grooming engineering for vanguard aesthetics.</p>
       </div>
     </div>
-
     <div class="footer-second">
-
-      <div class="footer-bottom" data-key="footer-rights">
-        DGR Professional © 2026. Todos los derechos reservados.
+      <div class="footer-bottom" data-key="footer-rights"
+        data-es="DGR Professional © 2026. Todos los derechos reservados.">
+        DGR Professional © 2026. All rights reserved.
       </div>
-
       <div class="footer-links">
-        <a href="https://www.sublimebw.com" target="_blank" rel="noopener noreferrer">
-          www.sublimebw.com
-        </a>
+        <a href="https://www.sublimebw.com" target="_blank" rel="noopener">www.sublimebw.com</a>
       </div>
-
     </div>
-
   </footer>
 
-  <button id="topBtn">▲</button>
-
+  <button id="topBtn" aria-label="Volver al inicio de la página">▲</button>
   <script src="../script.js"></script>
 
 </body>

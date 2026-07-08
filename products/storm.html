@@ -2,164 +2,267 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DGR Storm</title>
-<link rel="icon" href="../assets/favicon.svg">
-<link rel="stylesheet" href="../style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>DGR Storm | Blower & Vacuum Profesional</title>
+
+     <meta name="description"
+          content="Descubre DGR Storm. Dinámica de fluidos avanzada a 160.000 RPM y fuerza de descompresión de 12.000 Pa.">
+
+     <link rel="icon" href="../assets/favicon.svg">
+     <link rel="stylesheet" href="../style.css">
+
+     <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "DGR Storm Blower & Vacuum",
+    "image": "../assets/products/storm/storm-1.webp",
+    "description": "Sistema 2 en 1 de soplador y aspiradora profesional con motor de 160.000 RPM, 12.000 Pa y 6 boquillas intercambiables.",
+    "brand": {
+      "@type": "Brand",
+      "name": "DGR Professional"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.sublimebw.com",
+      "priceCurrency": "EUR",
+      "price": "129.90",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-<header class="navbar">
-<a href="../index.html#hero" class="logo">
-<span class="logo-mask">
-<img src="../assets/logo/logo-dgr-01.svg" alt="">
-</span>
-</a>
+     <div class="cursor-img" aria-hidden="true">
+          <img src="../assets/cursor-blower.png" alt="">
+     </div>
+     <div id="hair-container" aria-hidden="true"></div>
 
-<nav class="nav">
-<a href="../index.html#spark">Serie Spark</a>
-<a href="../index.html#collab">Eventos & Colaboradores</a>
-<a href="../index.html#warranty">Garantía</a>
-<a href="../index.html#contact">Contacto</a>
-</nav>
+     <header class="navbar">
+          <a href="../index.html#hero" class="logo" id="logo" aria-label="DGR Professional Home">
+               <span class="logo-mask"><img src="../assets/logo/logo-dgr-01.svg" alt="DGR Professional Logo"></span>
+          </a>
+          <nav class="nav" aria-label="Navegación Principal">
+               <a href="../index.html#spark" data-key="nav1">Serie Spark</a>
+               <a href="../index.html#collab" data-key="nav2">Eventos & Colaboradores</a>
+               <a href="../index.html#warranty" data-key="nav3">Garantía</a>
+               <a href="../index.html#contact" data-key="nav4">Contacto</a>
+               <div class="lang-switch">
+                    <button id="lang-en" aria-label="Change language to English">EN</button>
+                    <span aria-hidden="true">|</span>
+                    <button id="lang-es" aria-label="Cambiar idioma a Español">ES</button>
+               </div>
+          </nav>
+          <div class="menu-btn" role="button" aria-label="Abrir menú de navegación" tabindex="0">☰</div>
+     </header>
 
-<div class="menu-btn">☰</div>
-</header>
+     <section class="product-page" aria-label="Product Details">
+          <div class="product-gallery">
+               <div class="thumbs">
+                    <img class="active" src="../assets/products/storm/storm-1.webp" onclick="changeMedia(this)">
+                    <img src="../assets/products/storm/storm-2.webp" onclick="changeMedia(this)">
+                    <img src="../assets/products/storm/storm-3.webp" onclick="changeMedia(this)">
+                    <video autoplay muted loop playsinline preload="auto" src="../assets/products/storm/storm-4.webm"
+                         onclick="changeMedia(this)"></video>
+                    <img src="../assets/products/storm/storm-5.webp" onclick="changeMedia(this)">
+               </div>
+               <div class="main-image">
+                    <img id="mainImage" src="../assets/products/storm/storm-1.webp" alt="DGR Storm">
+                    <video id="mainVideo" class="video-container" controls style="display: none;" autoplay muted loop
+                         playsinline preload="auto"></video>
+               </div>
+          </div>
 
-<section class="product-page">
+          <div class="product-details">
+               <span class="product-category" data-key="storm_category" data-es="BLOWER & VACUUM · PUREZA AMBIENTAL">
+                    BLOWER & VACUUM · ENVIRONMENTAL PURITY
+               </span>
 
-<div class="product-gallery">
+               <h1 data-key="storm_title" data-es="DGR Storm">DGR Storm</h1>
 
-  <div class="thumbs">
-    <img class="active"
-         src="../assets/products/storm/storm-1.webp"
-         onclick="changeMedia(this)">
+               <p class="product-hook" data-key="storm_hook"
+                    data-es="Una herramienta compacta y versátil diseñada para mantener la barbería limpia con rapidez y precisión.">
+                    Una herramienta compacta y versátil diseñada para mantener la barbería limpia con rapidez y
+                    precisión.
+               </p>
 
-    <img src="../assets/products/storm/storm-2.webp"
-         onclick="changeMedia(this)">
+               <p class="product-price" aria-label="Precio: 129 euros con 90 céntimos">€129.90</p>
 
-    <img src="../assets/products/storm/storm-3.webp"
-         onclick="changeMedia(this)">
+               <div class="trust-strip">
+                    <span data-key="trust_1" data-es="Disponibilidad inmediata">Immediate availability</span><span
+                         aria-hidden="true">|</span>
+                    <span data-key="trust_2" data-es="Soporte técnico especializado">Specialized technical
+                         support</span><span aria-hidden="true">|</span>
+                    <span data-key="trust_3" data-es="Garantía estructural DGR">DGR structural warranty</span>
+               </div>
 
-    <video autoplay muted loop playsinline preload="auto"
-           src="../assets/products/storm/storm-4.webm"
-           onclick="changeMedia(this)">
-    </video>
-  </div>
+               <p class="product-description" data-key="storm_description"
+                    data-es="Combina soplador y aspiradora en un solo dispositivo de alta gama. Su motor de alta velocidad alcanza hasta 160.000 rpm y 12.000 Pa, garantizando una limpieza profunda y eficiente del entorno de trabajo.">
+                    Combina soplador y aspiradora en un solo dispositivo de alta gama. Su motor de alta velocidad
+                    alcanza hasta 160.000 rpm y 12.000 Pa, garantizando una limpieza profunda y eficiente del entorno de
+                    trabajo.
+               </p>
 
-  <div class="main-image">
-   
-    <img id="mainImage"
-         src="../assets/products/storm/storm-1.webp"
-         alt="DGR Storm"> 
+               <a href="https://www.sublimebw.com" target="_blank" class="buy-btn" data-key="strike_cta"
+                    data-es="Adquirir Instrumento">
+                    Acquire Instrument
+               </a>
+          </div>
+     </section>
 
-    <video id="mainVideo"
-class="video-container"
-           controls
-           style="display: none;"
-           autoplay muted loop playsinline preload="auto">
-    </video>
+     <section class="specs" aria-label="Technical Specifications">
+          <div class="section-heading">
+               <p class="section-label" data-key="eng_label" data-es="INGENIERÍA">ENGINEERING</p>
+               <h2 data-key="storm_eng_title" data-es="Dinámica de fluidos avanzada">Dinámica de fluidos avanzada</h2>
+          </div>
 
-  </div>
+          <div class="spec-grid">
+               <div class="spec-item"><span data-key="motor" data-es="Motor">Motor</span><strong>High-Speed
+                         Brushless</strong></div>
+               <div class="spec-item"><span>RPM</span><strong>160,000</strong></div>
+               <div class="spec-item"><span>Suction</span><strong>12,000 Pa</strong></div>
+               <div class="spec-item"><span data-key="body" data-es="Cuerpo">Body</span><strong>Ultra-Compact
+                         Design</strong></div>
+               <div class="spec-item"><span data-key="charge" data-es="Carga">Charge</span><strong>USB-C Fast
+                         Charge</strong></div>
+          </div>
+     </section>
 
-</div>
+     <section class="story" aria-label="Design Philosophy">
+          <div class="section-heading">
+               <p class="section-label" data-key="story_label" data-es="FILOSOFÍA DGR">DGR PHILOSOPHY</p>
+               <h2 data-key="storm_story_title" data-es="Adaptabilidad y eficiencia">Adaptabilidad y eficiencia</h2>
+          </div>
+          <p class="story-text" data-key="storm_story_text"
+               data-es="Diseñada para integrarse sin esfuerzo en el flujo de trabajo, cuenta con tres niveles de potencia ajustables (20, 22 y 25 m/s) e incluye un completo set de boquillas para cualquier escenario.">
+               Diseñada para integrarse sin esfuerzo en el flujo de trabajo, cuenta con tres niveles de potencia
+               ajustables (20, 22 y 25 m/s) e incluye un completo set de boquillas para cualquier escenario.
+          </p>
+     </section>
 
-<div class="product-details">
+     <section class="ecosystem" aria-label="Ecosistema DGR">
+          <div class="section-heading">
+               <p class="section-label" data-key="eco_label" data-es="SISTEMA INTEGRADO DGR">INTEGRATED DGR SYSTEM</p>
+               <h2 data-key="eco_title" data-es="Ecosistema de ingeniería para el corte">Engineering ecosystem for
+                    vanguard grooming</h2>
+          </div>
 
-<span class="product-category">
-AIR BLOWER / VACUUM
-</span>
+          <div class="products-grid-page">
+               <a href="dash.html" class="product-card-page" aria-label="Ver detalles de DGR Dash Clipper">
+                    <div class="product-image-page">
+                         <img src="../assets/img-product-land/dash.webp"
+                              alt="DGR Dash Clipper - Máquina de corte principal">
+                         <div class="products-overlay-page"><span class="product-tag"
+                                   data-key="tag-clipper">CLIPPER</span></div>
+                    </div>
+                    <div class="product-info-page">
+                         <h3>DGR Dash</h3>
+                    </div>
+               </a>
+               <a href="strike.html" class="product-card-page" aria-label="Ver detalles de DGR Strike Trimmer">
+                    <div class="product-image-page">
+                         <img src="../assets/img-product-land/strike.webp"
+                              alt="DGR Strike Trimmer - Máquina de contornos">
+                         <div class="products-overlay-page"><span class="product-tag"
+                                   data-key="tag-trimmer">TRIMMER</span></div>
+                    </div>
+                    <div class="product-info-page">
+                         <h3>DGR Strike</h3>
+                    </div>
+               </a>
+               <a href="zero.html" class="product-card-page" aria-label="Ver detalles de DGR Zero Shaver">
+                    <div class="product-image-page">
+                         <img src="../assets/img-product-land/zero.webp"
+                              alt="DGR Zero Shaver - Rasuradora de alta resistencia">
+                         <div class="products-overlay-page"><span class="product-tag"
+                                   data-key="tag-shaver">SHAVER</span></div>
+                    </div>
+                    <div class="product-info-page">
+                         <h3>DGR Zero</h3>
+                    </div>
+               </a>
+               <a href="storm.html" class="product-card-page" aria-label="Ver detalles de DGR Storm Air Blower">
+                    <div class="product-image-page">
+                         <img src="../assets/img-product-land/storm.webp"
+                              alt="DGR Storm Air Blower - Secador y purificador de alta velocidad">
+                         <div class="products-overlay-page"><span class="product-tag"
+                                   data-key="tag-blower">BLOWER</span></div>
+                    </div>
+                    <div class="product-info-page">
+                         <h3>DGR Storm</h3>
+                    </div>
+               </a>
+          </div>
+     </section>
 
-<h1>DGR Storm</h1>
+     <section class="included" aria-label="Package Contents">
+          <div class="section-heading">
+               <p class="section-label" data-key="box_label" data-es="CONTENIDO">IN THE BOX</p>
+               <h2 data-key="box_title" data-es="Dotación Profesional">Professional kit</h2>
+          </div>
+          <div class="included-content">
+               <div class="included-image">
+                    <img src="../assets/products/storm/storm-6.webp"
+                         alt="Componentes incluidos en el kit premium de DGR Storm" loading="lazy">
+               </div>
+               <ul class="included-list">
+                    <li data-key="storm_box_1" data-es="Unidad DGR Storm Air Blower">Unidad DGR Storm Air Blower</li>
+                    <li data-key="storm_box_2" data-es="Cable de carga rápida USB-C">Cable de carga rápida USB-C</li>
+                    <li data-key="storm_box_3" data-es="Set de 6 boquillas intercambiables">Set de 6 boquillas
+                         intercambiables</li>
+                    <li data-key="box_5" data-es="Manual de ingeniería y uso">Manual de ingeniería y uso</li>
+               </ul>
+          </div>
+     </section>
 
-<p class="product-price">
-€89.90
-</p>
+     <section class="value-strip" aria-label="Valores estructurales">
+          <div class="value-item">
+               <h3 class="v_title" data-key="storm_v1_title" data-es="Doble función">Doble función</h3>
+               <p class="v_text" data-key="storm_v1_text"
+                    data-es="Soplador y aspiradora integrados en un diseño ultracompacto.">Soplador y aspiradora
+                    integrados en un diseño ultracompacto.</p>
+          </div>
+          <div class="value-item">
+               <h3 class="v_title" data-key="storm_v2_title" data-es="Potencia regulable">Potencia regulable</h3>
+               <p class="v_text" data-key="storm_v2_text" data-es="Tres velocidades operativas de 20, 22 y 25 m/s.">Tres
+                    velocidades operativas de 20, 22 y 25 m/s. </p>
+          </div>
+          <div class="value-item">
+               <h3 class="v_title" data-key="storm_v3_title" data-es="Carga eficiente">Carga eficiente </h3>
+               <p class="v_text" data-key="storm_v3_text"
+                    data-es="Sistema de alimentación mediante USB-C con tecnología de carga rápida.">Sistema de
+                    alimentación mediante USB-C con tecnología de carga rápida.</p>
+          </div>
+     </section>
 
-<p class="product-description">
-Herramienta compacta y versátil diseñada para mantener la barbería limpia con rapidez y precisión. Combina soplador y aspiradora en un solo dispositivo con motor de alta velocidad y carga rápida USB-C.
-</p>
+     <footer class="footer">
+          <div class="footer-top">
+               <div>
+                    <h3>DGR Professional ®</h3>
+                    <p data-key="footer-desc"
+                         data-es="Alta ingeniería de precisión para el cuidado masculino de vanguardia.">High-precision
+                         grooming engineering for vanguard aesthetics.</p>
+               </div>
+          </div>
+          <div class="footer-second">
+               <div class="footer-bottom" data-key="footer-rights"
+                    data-es="DGR Professional © 2026. Todos los derechos reservados.">
+                    DGR Professional © 2026. All rights reserved.
+               </div>
+               <div class="footer-links">
+                    <a href="https://www.sublimebw.com" target="_blank" rel="noopener">www.sublimebw.com</a>
+               </div>
+          </div>
+     </footer>
 
-<a href="https://www.sublimebw.com" target="_blank" class="buy-btn">
-Comprar ahora
-</a>
-
-</div>
-
-</section>
-
-<section class="specs">
-
-<div class="section-heading">
-<p class="section-label">
-FICHA TÉCNICA
-</p>
-
-<h2>
-Potencia compacta.
-</h2>
-</div>
-
-<div class="spec-grid">
-
-<div class="spec-item">
-<span>Potencia</span>
-<strong>20 / 22 / 25 m/s</strong>
-</div>
-
-<div class="spec-item">
-<span>Motor</span>
-<strong>160.000 RPM</strong>
-</div>
-
-<div class="spec-item">
-<span>Presión</span>
-<strong>12.000 Pa</strong>
-</div>
-
-<div class="spec-item">
-<span>Funciones</span>
-<strong>Soplador + Aspirador</strong>
-</div>
-
-<div class="spec-item">
-<span>Boquillas</span>
-<strong>6 incluidas</strong>
-</div>
-
-<div class="spec-item">
-<span>Carga</span>
-<strong>USB-C</strong>
-</div>
-
-</div>
-
-</section>
-
-<footer class="footer">
-<div class="footer-top">
-<div>
-<h3>DGR Professional ®</h3>
-<p>Alta ingeniería de precisión para el cuidado masculino de vanguardia.</p>
-</div>
-</div>
-
-<div class="footer-second">
-<div class="footer-bottom">
-DGR Professional © 2026. Todos los derechos reservados.
-</div>
-
-<div class="footer-links">
-<a href="https://www.sublimebw.com">www.sublimebw.com</a>
-</div>
-</div>
-</footer>
-
-<button id="topBtn">▲</button>
-
-<script src="../script.js"></script>
+     <button id="topBtn" aria-label="Volver al inicio de la página">▲</button>
+     <script src="../script.js"></script>
 
 </body>
+
 </html>

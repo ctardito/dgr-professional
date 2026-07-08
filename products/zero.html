@@ -2,165 +2,270 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DGR Zero</title>
-<link rel="icon" href="../assets/favicon.svg">
-<link rel="stylesheet" href="../style.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>DGR Zero | Zero Shaver de Alto Rendimiento</title>
+
+     <meta name="description"
+          content="Descubre DGR Zero Shaver. Triple eje cinemático a 8.000 RPM reales con sistema de micro-pulido periférico.">
+
+     <link rel="icon" href="../assets/favicon.svg">
+     <link rel="stylesheet" href="../style.css">
+
+     <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "DGR Zero Shaver",
+    "image": "../assets/products/zero/zero-1.webp",
+    "description": "Rasuradora profesional con sistema de tres cuchillas de acero inoxidable, 8.000 RPM reales y batería de 1.400 mAh.",
+    "brand": {
+      "@type": "Brand",
+      "name": "DGR Professional"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.sublimebw.com",
+      "priceCurrency": "EUR",
+      "price": "99.90",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
 </head>
 
 <body>
 
-<header class="navbar">
-<a href="../index.html#hero" class="logo">
-<span class="logo-mask">
-<img src="../assets/logo/logo-dgr-01.svg" alt="">
-</span>
-</a>
+     <div class="cursor-img" aria-hidden="true">
+          <img src="../assets/cursor-shaver.png" alt="">
+     </div>
+     <div id="hair-container" aria-hidden="true"></div>
 
-<nav class="nav">
-<a href="../index.html#spark">Serie Spark</a>
-<a href="../index.html#collab">Eventos & Colaboradores</a>
-<a href="../index.html#warranty">Garantía</a>
-<a href="../index.html#contact">Contacto</a>
-</nav>
+     <header class="navbar">
+          <a href="../index.html#hero" class="logo" id="logo" aria-label="DGR Professional Home">
+               <span class="logo-mask"><img src="../assets/logo/logo-dgr-01.svg" alt="DGR Professional Logo"></span>
+          </a>
+          <nav class="nav" aria-label="Navegación Principal">
+               <a href="../index.html#spark" data-key="nav1">Serie Spark</a>
+               <a href="../index.html#collab" data-key="nav2">Eventos & Colaboradores</a>
+               <a href="../index.html#warranty" data-key="nav3">Garantía</a>
+               <a href="../index.html#contact" data-key="nav4">Contacto</a>
+               <div class="lang-switch">
+                    <button id="lang-en" aria-label="Change language to English">EN</button>
+                    <span aria-hidden="true">|</span>
+                    <button id="lang-es" aria-label="Cambiar idioma a Español">ES</button>
+               </div>
+          </nav>
+          <div class="menu-btn" role="button" aria-label="Abrir menú de navegación" tabindex="0">☰</div>
+     </header>
 
-<div class="menu-btn">☰</div>
-</header>
+     <section class="product-page" aria-label="Product Details">
+          <div class="product-gallery">
+               <div class="thumbs">
+                    <img class="active" src="../assets/products/zero/zero-1.webp" onclick="changeMedia(this)">
+                    <img src="../assets/products/zero/zero-2.webp" onclick="changeMedia(this)">
+                    <img src="../assets/products/zero/zero-3.webp" onclick="changeMedia(this)">
+                    <video autoplay muted loop playsinline preload="auto" src="../assets/products/zero/zero-4.webm"
+                         onclick="changeMedia(this)"></video>
+                    <img src="../assets/products/zero/zero-5.webp" onclick="changeMedia(this)">
+               </div>
+               <div class="main-image">
+                    <img id="mainImage" src="../assets/products/zero/zero-1.webp" alt="DGR Zero">
+                    <video id="mainVideo" class="video-container" controls style="display: none;" autoplay muted loop
+                         playsinline preload="auto"></video>
+               </div>
+          </div>
 
-<section class="product-page">
+          <div class="product-details">
+               <span class="product-category" data-key="zero_category" data-es="SHAVER · ACABADO IMPECABLE">
+                    SHAVER · FLAWLESS FINISH
+               </span>
 
-<div class="product-gallery">
+               <h1 data-key="zero_title" data-es="DGR Zero">DGR Zero</h1>
 
-  <div class="thumbs">
-    <img class="active"
-         src="../assets/products/zero/zero-1.webp"
-         onclick="changeMedia(this)">
+               <p class="product-hook" data-key="zero_hook"
+                    data-es="El acabado que distingue un corte correcto de un corte perfecto.">
+                    El acabado que distingue un corte correcto de un corte perfecto.
+               </p>
 
-    <img src="../assets/products/zero/zero-2.webp"
-         onclick="changeMedia(this)">
+               <p class="product-price" aria-label="Precio: 99 euros con 90 céntimos">€99.90</p>
 
-    <img src="../assets/products/zero/zero-3.webp"
-         onclick="changeMedia(this)">
+               <div class="trust-strip">
+                    <span data-key="trust_1" data-es="Disponibilidad inmediata">Immediate availability</span><span
+                         aria-hidden="true">|</span>
+                    <span data-key="trust_2" data-es="Soporte técnico especializado">Specialized technical
+                         support</span><span aria-hidden="true">|</span>
+                    <span data-key="trust_3" data-es="Garantía estructural DGR">DGR structural warranty</span>
+               </div>
 
-    <video autoplay muted loop playsinline preload="auto"
-           src="../assets/products/zero/zero-4.webm"
-           onclick="changeMedia(this)">
-    </video>
-  </div>
+               <p class="product-description" data-key="zero_description"
+                    data-es="Equipada con un sistema de tres cuchillas de acero inoxidable, cuenta con dos rodillos externos que apuran al cero y pulen la superficie, más una cuchilla central que atrapa el pelo resistente. No deja franjas ni 'nubes' de sombra.">
+                    Equipada con un sistema de tres cuchillas de acero inoxidable, cuenta con dos rodillos externos que
+                    apuran al cero y pulen la superficie, más una cuchilla central que atrapa el pelo resistente. No
+                    deja franjas ni 'nubes' de sombra.
+               </p>
 
-  <div class="main-image">
-   
-    <img id="mainImage"
-         src="../assets/products/zero/zero-1.webp"
-         alt="DGR Zero"> 
+               <a href="https://www.sublimebw.com" target="_blank" class="buy-btn" data-key="strike_cta"
+                    data-es="Adquirir Instrumento">
+                    Acquire Instrument
+               </a>
+          </div>
+     </section>
 
-    <video id="mainVideo"
-class="video-container"
-           controls
-           style="display: none;"
-           autoplay muted loop playsinline preload="auto">
-    </video>
+     <section class="specs" aria-label="Technical Specifications">
+          <div class="section-heading">
+               <p class="section-label" data-key="eng_label" data-es="INGENIERÍA">ENGINEERING</p>
+               <h2 data-key="zero_eng_title" data-es="Eficacia milimétrica">Eficacia milimétrica</h2>
+          </div>
 
-  </div>
+          <div class="spec-grid">
+               <div class="spec-item"><span data-key="motor" data-es="Motor">Motor</span><strong>Rotary Direct
+                         Drive</strong></div>
+               <div class="spec-item"><span>RPM</span><strong>8,000</strong></div>
+               <div class="spec-item"><span data-key="battery" data-es="Batería">Battery</span><strong>1,400
+                         mAh</strong></div>
+               <div class="spec-item"><span data-key="blade" data-es="Cuchilla">Blade</span><strong>Triple Stainless
+                         Steel</strong></div>
+               <div class="spec-item"><span data-key="body" data-es="Cuerpo">Body</span><strong>Robust Metallic</strong>
+               </div>
+               <div class="spec-item"><span data-key="charge" data-es="Carga">Charge</span><strong>USB-C +
+                         Screen</strong></div>
+          </div>
+     </section>
 
-</div>
+     <section class="story" aria-label="Design Philosophy">
+          <div class="section-heading">
+               <p class="section-label" data-key="story_label" data-es="FILOSOFÍA DGR">DGR PHILOSOPHY</p>
+               <h2 data-key="zero_story_title" data-es="Ejecución infalible">Ejecución infalible</h2>
+          </div>
+          <p class="story-text" data-key="zero_story_text"
+               data-es="Aporta 8.000 rpm reales junto a un robusto cuerpo metálico que le da el peso ideal para maniobrar con soltura y precisión. Deja el trabajo limpio, como debe ser.">
+               Aporta 8.000 rpm reales junto a un robusto cuerpo metálico que le da el peso ideal para maniobrar con
+               soltura y precisión. Deja el trabajo limpio, como debe ser.
+          </p>
+     </section>
 
-<div class="product-details">
+     <section class="ecosystem" aria-label="Ecosistema DGR">
+          <div class="section-heading">
+               <p class="section-label" data-key="eco_label" data-es="SISTEMA INTEGRADO DGR">INTEGRATED DGR SYSTEM</p>
+               <h2 data-key="eco_title" data-es="Ecosistema de ingeniería para el corte">Engineering ecosystem for
+                    vanguard grooming</h2>
+          </div>
 
-<span class="product-category">
-SHAVER
-</span>
+          <div class="products-grid-page">
+               <a href="dash.html" class="product-card-page" aria-label="Ver detalles de DGR Dash Clipper">
+                    <div class="product-image-page">
+                         <img src="../assets/img-product-land/dash.webp"
+                              alt="DGR Dash Clipper - Máquina de corte principal">
+                         <div class="products-overlay-page"><span class="product-tag"
+                                   data-key="tag-clipper">CLIPPER</span></div>
+                    </div>
+                    <div class="product-info-page">
+                         <h3>DGR Dash</h3>
+                    </div>
+               </a>
+               <a href="strike.html" class="product-card-page" aria-label="Ver detalles de DGR Strike Trimmer">
+                    <div class="product-image-page">
+                         <img src="../assets/img-product-land/strike.webp"
+                              alt="DGR Strike Trimmer - Máquina de contornos">
+                         <div class="products-overlay-page"><span class="product-tag"
+                                   data-key="tag-trimmer">TRIMMER</span></div>
+                    </div>
+                    <div class="product-info-page">
+                         <h3>DGR Strike</h3>
+                    </div>
+               </a>
+               <a href="zero.html" class="product-card-page" aria-label="Ver detalles de DGR Zero Shaver">
+                    <div class="product-image-page">
+                         <img src="../assets/img-product-land/zero.webp"
+                              alt="DGR Zero Shaver - Rasuradora de alta resistencia">
+                         <div class="products-overlay-page"><span class="product-tag"
+                                   data-key="tag-shaver">SHAVER</span></div>
+                    </div>
+                    <div class="product-info-page">
+                         <h3>DGR Zero</h3>
+                    </div>
+               </a>
+               <a href="storm.html" class="product-card-page" aria-label="Ver detalles de DGR Storm Air Blower">
+                    <div class="product-image-page">
+                         <img src="../assets/img-product-land/storm.webp"
+                              alt="DGR Storm Air Blower - Secador y purificador de alta velocidad">
+                         <div class="products-overlay-page"><span class="product-tag"
+                                   data-key="tag-blower">BLOWER</span></div>
+                    </div>
+                    <div class="product-info-page">
+                         <h3>DGR Storm</h3>
+                    </div>
+               </a>
+          </div>
+     </section>
 
-<h1>DGR Zero</h1>
+     <section class="included" aria-label="Package Contents">
+          <div class="section-heading">
+               <p class="section-label" data-key="box_label" data-es="CONTENIDO">IN THE BOX</p>
+               <h2 data-key="box_title" data-es="Dotación Profesional">Professional kit</h2>
+          </div>
+          <div class="included-content">
+               <div class="included-image">
+                    <img src="../assets/products/zero/zero-6.webp"
+                         alt="Componentes incluidos en el kit premium de DGR Zero" loading="lazy">
+               </div>
+               <ul class="included-list">
+                    <li data-key="zero_box_1" data-es="Unidad DGR Zero Shaver">Unidad DGR Zero Shaver</li>
+                    <li data-key="zero_box_2" data-es="Cable de carga USB-C">Cable de carga USB-C</li>
+                    <li data-key="zero_box_3" data-es="Cubierta protectora">Cubierta protectora</li>
+                    <li data-key="box_3" data-es="Kit técnico de mantenimiento">Kit técnico de mantenimiento</li>
+                    <li data-key="box_5" data-es="Manual de ingeniería y uso">Manual de ingeniería y uso</li>
+               </ul>
+          </div>
+     </section>
 
-<p class="product-price">
-€99.90
-</p>
+     <section class="value-strip" aria-label="Valores estructurales">
+          <div class="value-item">
+               <h3 class="v_title" data-key="zero_v1_title" data-es="Batería optimizada">Batería optimizada</h3>
+               <p class="v_text" data-key="zero_v1_text"
+                    data-es="1.400 mAh controlables a través de su pantalla incorporada.">1.400 mAh controlables a
+                    través de su pantalla incorporada.</p>
+          </div>
+          <div class="value-item">
+               <h3 class="v_title" data-key="zero_v2_title" data-es="Triple acción">Triple acción</h3>
+               <p class="v_text" data-key="zero_v2_text"
+                    data-es="Tres cuchillas de acero inoxidable para un fade sin fricción.">Tres cuchillas de acero
+                    inoxidable para un fade sin fricción.</p>
+          </div>
+          <div class="value-item">
+               <h3 class="v_title" data-key="zero_v3_title" data-es="Cuerpo metálico">Cuerpo metálico</h3>
+               <p class="v_text" data-key="zero_v3_text"
+                    data-es="Peso perfectamente calibrado para la máxima maniobrabilidad.">Peso perfectamente calibrado
+                    para la máxima maniobrabilidad.</p>
+          </div>
+     </section>
 
-<p class="product-description">
-El acabado que distingue un corte correcto de un corte perfecto.
-Sistema de tres cuchillas de acero inoxidable diseñado para eliminar sombras y conseguir fades impecables con máxima suavidad.
-</p>
+     <footer class="footer">
+          <div class="footer-top">
+               <div>
+                    <h3>DGR Professional ®</h3>
+                    <p data-key="footer-desc"
+                         data-es="Alta ingeniería de precisión para el cuidado masculino de vanguardia.">High-precision
+                         grooming engineering for vanguard aesthetics.</p>
+               </div>
+          </div>
+          <div class="footer-second">
+               <div class="footer-bottom" data-key="footer-rights"
+                    data-es="DGR Professional © 2026. Todos los derechos reservados.">
+                    DGR Professional © 2026. All rights reserved.
+               </div>
+               <div class="footer-links">
+                    <a href="https://www.sublimebw.com" target="_blank" rel="noopener">www.sublimebw.com</a>
+               </div>
+          </div>
+     </footer>
 
-<a href="https://www.sublimebw.com" target="_blank" class="buy-btn">
-Comprar ahora
-</a>
-
-</div>
-
-</section>
-
-<section class="specs">
-
-<div class="section-heading">
-<p class="section-label">
-FICHA TÉCNICA
-</p>
-
-<h2>
-Acabado impecable.
-</h2>
-</div>
-
-<div class="spec-grid">
-
-<div class="spec-item">
-<span>Sistema</span>
-<strong>3 cuchillas</strong>
-</div>
-
-<div class="spec-item">
-<span>Material</span>
-<strong>Acero inoxidable</strong>
-</div>
-
-<div class="spec-item">
-<span>RPM</span>
-<strong>8.000</strong>
-</div>
-
-<div class="spec-item">
-<span>Batería</span>
-<strong>1400 mAh</strong>
-</div>
-
-<div class="spec-item">
-<span>Pantalla</span>
-<strong>Integrada</strong>
-</div>
-
-<div class="spec-item">
-<span>Carga</span>
-<strong>USB-C</strong>
-</div>
-
-</div>
-
-</section>
-
-<footer class="footer">
-<div class="footer-top">
-<div>
-<h3>DGR Professional ®</h3>
-<p>Alta ingeniería de precisión para el cuidado masculino de vanguardia.</p>
-</div>
-</div>
-
-<div class="footer-second">
-<div class="footer-bottom">
-DGR Professional © 2026. Todos los derechos reservados.
-</div>
-
-<div class="footer-links">
-<a href="https://www.sublimebw.com">www.sublimebw.com</a>
-</div>
-</div>
-</footer>
-
-<button id="topBtn">▲</button>
-
-<script src="../script.js"></script>
+     <button id="topBtn" aria-label="Volver al inicio de la página">▲</button>
+     <script src="../script.js"></script>
 
 </body>
+
 </html>
