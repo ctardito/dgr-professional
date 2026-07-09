@@ -316,7 +316,8 @@ section {
   grid-template-columns:
     repeat(3, 1fr);
   gap: 40px;
-  width: auto;
+  width: fit-content;
+  justify-self: center;
 }
 
 .product-card {
@@ -399,9 +400,9 @@ section {
   .products-grid {
     display: grid;
     grid-template-columns:
-    repeat(2, 1fr);
+      repeat(2, 1fr);
     gap: 40px;
-    width: auto;
+    width: fit-content;
     justify-self: center;
   }
 
@@ -1207,6 +1208,7 @@ section {
   flex-wrap: wrap;
   gap: 40px;
   width: 80vw;
+  justify-content: center;
 }
 
 .product-card-page {
